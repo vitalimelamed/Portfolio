@@ -1,12 +1,13 @@
 // Open navbar and scroll to navbar link
-const navbarToggle = document.querySelector(".navbar-toggle");
-const navbarLinks = document.querySelectorAll(".navbar__link");
-navbarToggle.addEventListener("click", () => {
-  document.body.classList.toggle("navbar-open");
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelectorAll(".nav__link");
+
+navToggle.addEventListener("click", () => {
+  document.body.classList.toggle("nav-open");
 });
 // Close navbar
-navbarLinks.forEach((link) => {
+navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    document.body.classList.remove("navbar-open");
+    document.body.classList.remove("nav-open");
   });
 });
