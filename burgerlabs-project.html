@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitali Melamed Portfolio</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-177278372-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-177278372-1");
+    </script>
+    <!-- Google recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Normalize reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/1c770cafa0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <button class="navbar-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="/Portfolio/index.html" class="navbar__link">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/Portfolio/index.html#skills" class="navbar__link"
+              >Skills</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="/Portfolio/index.html#profile" class="navbar__link"
+              >Profile</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="/Portfolio/index.html#portfolio" class="navbar__link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="/Portfolio/index.html#contact" class="navbar__link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- / Navbar -->
+    </header>
+    <!-- / Header -->
+    <!-- Project -->
+    <div class="project-item-individual">
+      <h1>Burger Labs</h1>
+      <p>
+        Burger Labs project developed with Bootstrap CSS front end framework. Showcasing HTML,
+        CSS skills. The project consists of home page.
+      </p>
+      <img
+        src="img/BurgerLabs-mockup-one.png"
+        alt="picture of carousel section on landing page"
+      />
+      <p>
+        The project uses a carousel slider. The project is mobile responsive using media queries.
+      </p>
+      <img
+        src="img/BurgerLabs-mockup-two.png"
+        alt="picture of about section on landing page"
+      />
+      <div class="btn-group-one">
+        <a
+          href="https://vitalimelamed.github.io/BurgerLabs/"
+          target="_blank"
+          class="btn-project"
+          >Live demo <svg class="fal fa-external-link"></svg
+        ></a>
+        <a
+          href="https://github.com/vitalimelamed/BurgerLabs"
+          target="_blank"
+          class="btn-project"
+          >View code <svg class="fab fa-github"></svg
+        ></a>
+        <div class="btn-group-two">
+          <a href="/Portfolio/nicestore-project.html" class="btn-project"
+            ><svg class="fal fa-arrow-left"></svg> Previous project</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- / Project -->
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/vitalimelamed"
+            target="_blank"
+          >
+            <svg class="fab fa-github"></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://linkedin.com/in/vitalimelamed"
+            target="_blank"
+          >
+            <svg class="fab fa-linkedin"></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://twitter.com/vitalimelamed"
+            target="_blank"
+          >
+            <svg class="fab fa-twitter"></svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        &copy;
+        <script>
+          new Date().getFullYear() && document.write(+new Date().getFullYear());
+        </script>
+     </p>
+    </footer>
+    <a class="btn-top"><svg class="fal fa-arrow-up"></svg></a>
+    <!-- / Footer -->
+    <!-- jQuery -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <!-- My JavaScript -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

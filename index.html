@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitali Melamed Portfolio</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-177278372-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-177278372-1");
+    </script>
+    <!-- Google recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Normalize reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/1c770cafa0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <button class="navbar-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="/Portfolio/index.html" class="navbar__link">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/Portfolio/index.html#skills" class="navbar__link"
+              >Skills</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="/Portfolio/index.html#profile" class="navbar__link"
+              >Profile</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="/Portfolio/index.html#portfolio" class="navbar__link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="/Portfolio/index.html#contact" class="navbar__link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- / Navbar -->
+    </header>
+    <!-- / Header -->
+    <!-- Introduction -->
+    <section class="introduction">
+      <h1 class="section__title section__title--introduction">
+        Hi, I am <strong>Vitali Melamed</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--introduction">
+        Front end dev
+      </p>
+      <img
+        src="img/Vitali-Melamed-profile-one.jpg"
+        alt="picture of Vitali Melamed sitting down"
+        class="introduction__img"
+      />
+    </section>
+    <!-- / Introduction -->
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <h2 class="section__title section__title--skills">Skills</h2>
+      <p class="section__subtitle section__subtitle--skills">
+        A list of skills
+      </p>
+      <div class="skillset">
+        <!-- Skill 1 -->
+        <div class="skill">
+          <h3>Development</h3>
+          <p>
+            Build a website using HTML, CSS and JavaScript. Specialising in CSS
+            front end frameworks such as Bootstrap.
+          </p>
+        </div>
+        <!-- / Skill 1 -->
+        <!-- Skill 2 -->
+        <div class="skill">
+          <h3>Design</h3>
+          <p>
+            Working with Figma tool primarily. Can create a mockup of User Interface for the
+            front end of a website.
+          </p>
+        </div>
+        <!-- / Skill 2 -->
+        <!-- Skill 3 -->
+        <div class="skill">
+          <h3>WordPress</h3>
+          <p>
+            Build a website using WordPress Themes. Can be customised
+            accordingly if needed.
+          </p>
+        </div>
+        <!-- / Skill 3 -->
+      </div>
+      <a href="#portfolio" class="btn">Portfolio</a>
+    </section>
+    <!-- / Skills -->
+    <!-- Profile -->
+    <section class="profile" id="profile">
+      <h2 class="section__title section__title--profile">Profile</h2>
+      <p class="section__subtitle section__subtitle--profile">
+        Front end web developer based out of Melbourne, Australia
+      </p>
+      <div class="profile-text">
+        <p>
+          Hello I am Vitali Melamed. I am a front end web developer based in
+          Melbourne, Australia. I like coding with a passion. I specialise in front end web
+          development working with HTML, CSS and Sass with some exposure to the
+          back end as well. Technologies and frameworks I have exposure to
+          include Node, React, Vue, Bootstrap and WordPress just to name a few.
+          Programming languages I work with include JavaScript and PHP.
+        </p>
+      </div>
+      <img
+        src="img/Vitali-Melamed-profile-two.jpg"
+        alt="picture of Vitali Melamed sitting down"
+        class="profile__img"
+      />
+    </section>
+    <!-- / Profile -->
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="section__title section__title--portfolio">Portfolio</h2>
+      <p class="section__subtitle section__subtitle--portfolio">
+        A selection of some of the projects
+      </p>
+      <div class="projects">
+        <!-- Project 1 -->
+        <a href="/Portfolio/skylounge-project.html" class="project__item">
+          <img
+            src="img/SkyLounge-mockup-one.png"
+            alt="Sky Lounge project mockup"
+            class="project__img"
+          />
+          <div class="project__content">
+            <h3>Sky Lounge</h3>
+            <p>project</p>
+          </div>
+        </a>
+        <!-- / Project 1 -->
+        <!-- Project 2 -->
+        <a href="/Portfolio/blogtech-project.html" class="project__item">
+          <img
+            src="img/BlogTech-mockup-one.png"
+            alt="BlogTech project mockup"
+            class="project__img"
+          />
+          <div class="project__content">
+            <h3>BlogTech</h3>
+            <p>project</p>
+          </div>
+        </a>
+        <!-- / Project 2 -->
+        <!-- Project 3 -->
+        <a href="/Portfolio/nicestore-project.html" class="project__item">
+          <img
+            src="img/NiceStore-mockup-one.png"
+            alt="Nice Store project mockup"
+            class="project__img"
+          />
+          <div class="project__content">
+            <h3>Nice Store</h3>
+            <p>project</p>
+          </div>
+        </a>
+        <!-- / Project 3 -->
+        <!-- Project 4 -->
+        <a href="/Portfolio/burgerlabs-project.html" class="project__item">
+          <img
+            src="img/BurgerLabs-mockup-one.png"
+            alt="Burger Labs project mockup"
+            class="project__img"
+          />
+          <div class="project__content">
+            <h3>Burger Labs</h3>
+            <p>project</p>
+          </div>
+        </a>
+        <!-- / Project 4 -->
+      </div>
+    </section>
+    <!-- / Portfolio -->
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2 class="section__title section__title--contact">Contact</h2>
+      <p class="section__subtitle section__subtitle--contact">
+        Fill out the form below with your enquiry
+      </p>
+      <!-- Formspree form -->
+      <form class="form" action="https://formspree.io/xwkrjpnw" method="POST">
+        <div class="form__item">
+          <label class="form__label" for="name">Name</label>
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+
+        <div class="form__item">
+          <label class="form__label" for="email">Email</label>
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
+
+        <div class="form__item">
+          <label class="form__label" for="message">Message</label>
+          <textarea
+            class="form__textarea"
+            name="message"
+            id="message"
+            required
+          ></textarea>
+        </div>
+        <!-- Google recaptcha -->
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LeHfN4ZAAAAAK4qCMqmjuzJlV8UGDzqmBMCs8Kq"
+        ></div>
+        <button class="btn-form" type="submit">Send message</button>
+      </form>
+    </section>
+    <!-- / Contact -->
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/vitalimelamed"
+            target="_blank"
+          >
+            <svg class="fab fa-github"></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://linkedin.com/in/vitalimelamed"
+            target="_blank"
+          >
+            <svg class="fab fa-linkedin"></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://twitter.com/vitalimelamed"
+            target="_blank"
+          >
+            <svg class="fab fa-twitter"></svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        &copy;
+        <script>
+          new Date().getFullYear() && document.write(+new Date().getFullYear());
+        </script>
+     </p>
+    </footer>
+    <a class="btn-top"><svg class="fal fa-arrow-up"></svg></a>
+    <!-- / Footer -->
+    <!-- jQuery -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <!-- My JavaScript -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
