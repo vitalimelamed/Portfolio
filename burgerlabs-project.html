@@ -39,47 +39,31 @@
       crossorigin="anonymous"
     ></script>
     <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
       <!-- Nav -->
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="index.html#skills" class="nav__link"
-              >Skills</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="index.html#profile" class="nav__link"
-              >Profile</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="index.html#portfolio" class="nav__link"
-              >Portfolio</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="index.html#contact" class="nav__link"
-              >Contact</a
-            >
-          </li>
-        </ul>
+      <nav class="navbar">
+        <div class="brand-title">Vitali Melamed</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#profile">Profile</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
       <!-- / Nav -->
     </header>
@@ -106,17 +90,17 @@
         <a
           href="https://vitalimelamed.github.io/BurgerLabs/"
           target="_blank"
-          class="btn-project"
+          class="btn"
           >Live demo <svg class="fal fa-external-link"></svg
         ></a>
         <a
           href="https://github.com/vitalimelamed/BurgerLabs"
           target="_blank"
-          class="btn-project"
+          class="btn"
           >View code <svg class="fab fa-github"></svg
         ></a>
         <div class="btn-group-two">
-          <a href="nicestore-project.html" class="btn-project"
+          <a href="nicestore-project.html" class="btn"
             ><svg class="fal fa-arrow-left"></svg> Previous project</a
           >
         </div>
@@ -162,7 +146,7 @@
      </p>
     </footer>
     <!-- / Footer -->
-    <!-- My JavaScript -->
-    <script src="js/index.js"></script>
+     <!-- My JavaScript -->
+     <script src="js/index.js"></script>
   </body>
 </html>
