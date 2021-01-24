@@ -9,8 +9,6 @@
   --font-family-primary: 'Montserrat', sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --letter-spacing: 3px;
-  --text-transform: uppercase;
   --color-primary: #007aff;
   --color-light: #ffffff;
   --color-lightgrey: #f9f9f9;
@@ -42,7 +40,6 @@ body {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body);
   line-height: 1.6;
-  letter-spacing: var(--letter-spacing);
 }
 section {
   padding: 5em 0.5em;
@@ -90,15 +87,12 @@ h3 {
 }
 h1 {
   font-size: var(--font-size-h1);
-  text-transform: var(--text-transform);
 }
 h2 {
   font-size: var(--font-size-h2);
-  text-transform: var(--text-transform);
 }
 h3 {
   font-size: var(--font-size-h3);
-  text-transform: var(--text-transform);
 }
 .section__title {
   margin-bottom: 0.25em;
@@ -393,7 +387,6 @@ bottom: 6px;
 }
 .project__content h3 {
   font-size: 1rem;
-  text-transform: none;
 }
 .project__content p {
   font-size: 0.8rem;
