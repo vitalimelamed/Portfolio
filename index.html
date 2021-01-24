@@ -39,53 +39,37 @@
       crossorigin="anonymous"
     ></script>
     <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
       <!-- Nav -->
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="index.html#skills" class="nav__link"
-              >Skills</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="index.html#profile" class="nav__link"
-              >Profile</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="index.html#portfolio" class="nav__link"
-              >Portfolio</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="index.html#contact" class="nav__link"
-              >Contact</a
-            >
-          </li>
-        </ul>
+      <nav class="navbar">
+        <div class="brand-title">Vitali Melamed</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
       <!-- / Nav -->
     </header>
     <!-- / Header -->
     <!-- Introduction -->
-    <section class="introduction">
+    <section class="introduction" id="home">
       <h1 class="section__title section__title--introduction">
         Hi, I am <strong>Vitali Melamed</strong>
       </h1>
@@ -102,9 +86,9 @@
     <!-- Skills -->
     <section class="skills" id="skills">
       <h2 class="section__title section__title--skills">Skills</h2>
-      <p class="section__subtitle section__subtitle--skills">
+      <!-- <p class="section__subtitle section__subtitle--skills">
         A list of skills
-      </p>
+      </p> -->
       <div class="skillset">
         <!-- Skill 1 -->
         <div class="skill">
@@ -119,8 +103,8 @@
         <div class="skill">
           <h3>Design</h3>
           <p>
-            Working with Figma tool primarily. Can create a mockup of User Interface for the
-            front end of a website.
+            Working with Figma tool primarily. Can create a mockup of User
+            Interface for the front end of a website.
           </p>
         </div>
         <!-- / Skill 2 -->
@@ -146,11 +130,12 @@
       <div class="profile-text">
         <p>
           Hello I am Vitali Melamed. I am a front end web developer based in
-          Melbourne, Australia. I like coding with a passion. I specialise in front end web
-          development working with HTML, CSS and Sass with some exposure to the
-          back end as well. Technologies and frameworks I have exposure to
-          include Node, React, Vue, Bootstrap and WordPress just to name a few.
-          Programming languages I work with include JavaScript and PHP.
+          Melbourne, Australia. I like coding with a passion. I specialise in
+          front end web development working with HTML, CSS & Sass with some
+          exposure to the back end as well. Technologies and frameworks I have
+          exposure to include Node, React, Vue, Bootstrap and WordPress just to
+          name a few. Programming languages I work with include JavaScript and
+          PHP.
         </p>
       </div>
       <img
@@ -163,9 +148,12 @@
     <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
       <h2 class="section__title section__title--portfolio">Portfolio</h2>
-      <p class="section__subtitle section__subtitle--portfolio">
+      <!-- <p class="section__subtitle section__subtitle--portfolio">
         A selection of some of the projects
-      </p>
+      </p> -->
+      <!-- <p>
+        A selection of some of the projects
+      </p> -->
       <div class="projects">
         <!-- Project 1 -->
         <a href="skylounge-project.html" class="project__item">
@@ -225,9 +213,12 @@
     <!-- Contact -->
     <section class="contact" id="contact">
       <h2 class="section__title section__title--contact">Contact</h2>
-      <p class="section__subtitle section__subtitle--contact">
+      <!-- <p class="section__subtitle section__subtitle--contact">
         Fill out the form below with your enquiry
-      </p>
+      </p> -->
+      <!-- <p>
+        Fill out the form below with your enquiry
+      </p> -->
       <!-- Formspree form -->
       <form class="form" action="https://formspree.io/xwkrjpnw" method="POST">
         <div class="form__item">
@@ -266,7 +257,7 @@
           class="g-recaptcha"
           data-sitekey="6LeHfN4ZAAAAAK4qCMqmjuzJlV8UGDzqmBMCs8Kq"
         ></div>
-        <button class="btn-form" type="submit">Send message</button>
+        <button class="btn" type="submit">Send message</button>
       </form>
     </section>
     <!-- / Contact -->
@@ -306,7 +297,7 @@
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
         </script>
-     </p>
+      </p>
     </footer>
     <!-- / Footer -->
     <!-- My JavaScript -->
