@@ -70,6 +70,23 @@ strong {
 .btn:hover {
   background-color: #046ad8;
 }
+.btn-top {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  padding: 0.8em 1.2em;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn-top:hover {
+  background-color: #046ad8;
+}
 /* Typography */
 h1,
 h2,
