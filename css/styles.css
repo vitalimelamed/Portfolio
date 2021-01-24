@@ -58,34 +58,28 @@ strong {
 .btn {
   display: inline-block;
   padding: 0.8em 1.2em;
-  background-color: var(--color-primary);
-  color: var(--color-light);
+  background-color: transparent;
+  color: var(--color-primary);
   text-decoration: none;
-  border: 0;
+  border: 1px solid;
   outline: 0;
   border-radius: 5px;
   font-size: 15px;
   cursor: pointer;
-}
-.btn:hover {
-  background-color: #046ad8;
 }
 .btn-top {
   position: fixed;
   bottom: 1em;
   right: 1em;
   padding: 0.8em 1.2em;
-  background-color: var(--color-primary);
-  color: var(--color-light);
+  background-color: transparent;
+  color: var(--color-primary);
   text-decoration: none;
-  border: 0;
+  border: 1px solid;
   outline: 0;
   border-radius: 5px;
   font-size: 15px;
   cursor: pointer;
-}
-.btn-top:hover {
-  background-color: #046ad8;
 }
 /* Typography */
 h1,
@@ -444,7 +438,6 @@ h3 {
 }
 /* Footer */
 .footer {
-  background-color: var(--color-lightgrey);
   text-align: center;
   padding: 1em 0;
   font-size: var(--font-size-h3);
