@@ -118,7 +118,7 @@ h3 {
   color: var(--color-light);
 }
 
-.brand-title {
+.portfolio-title {
   font-size: 1.2em;
   margin: .5em;
 }
@@ -140,7 +140,7 @@ h3 {
 .navbar-links li a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: var(--color-light);
   padding: 1rem;
   font-size: 14px;
 }
@@ -148,32 +148,51 @@ h3 {
 .navbar-links li:hover {
   background-color: #046ad8;
 }
-
-.toggle-button {
-  position: absolute;
-  top: 1em;
-  right: 1em;
+.navbar-toggle {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
 }
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: var(--color-light);
-  border-radius: 10px;
+.navbar-toggle {
+  padding: .5em;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 1.3em;
+  right: 1em;
 }
-
+.hamburger {
+display: block;
+position: relative;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+background-color: var(--color-light);
+width: 2em;
+height: 3px;
+border-radius: 1em;
+}
+.hamburger::before,
+.hamburger::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+}
+.hamburger::before {
+top: 6px;
+}
+.hamburger::after {
+bottom: 6px;
+}
 @media (max-width: 800px) {
   .navbar {
       flex-direction: column;
       align-items: flex-start;
   }
 
-  .toggle-button {
+  .navbar-toggle {
       display: flex;
   }
 
