@@ -138,7 +138,7 @@ h3 {
   display: none;
 }
 .navbar-toggle {
-  font-size: 2em;
+  font-size: 30px;
   background-color: transparent;
   color: var(--color-light);
   border: 0;
