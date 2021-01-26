@@ -145,8 +145,8 @@ h3 {
   outline: 0;
   cursor: pointer;
   position: fixed;
-  top: .3em;
-  right: .2em;
+  top: 10px;
+  right: 0;
 }
 @media (max-width: 800px) {
   .navbar {
