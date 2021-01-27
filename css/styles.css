@@ -386,6 +386,7 @@ h3 {
   border: 1px solid #cccccc;
   border-radius: 3px;
   outline: 0;
+  margin: 0 0 2em 0;
 }
 .form__textarea {
   display: block;
@@ -399,6 +400,7 @@ h3 {
   border: 1px solid #cccccc;
   border-radius: 3px;
   outline: 0;
+  margin: 0 0 2em 0;
 }
 /* Footer */
 .footer {
