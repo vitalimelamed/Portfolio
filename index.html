@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPFKGQ4L52"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EPFKGQ4L52');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vitali Melamed Portfolio</title>
@@ -130,10 +138,6 @@
             alt="Sky Lounge project mockup"
             class="project__img"
           />
-          <div class="project__content">
-            <h3>SkyLounge</h3>
-            <p>project</p>
-          </div>
         </a>
         <!-- / Project 01 -->
         <!-- Project 02 -->
@@ -143,10 +147,6 @@
             alt="BlogTech project mockup"
             class="project__img"
           />
-          <div class="project__content">
-            <h3>BlogTech</h3>
-            <p>project</p>
-          </div>
         </a>
         <!-- / Project 02 -->
         <!-- Project 03 -->
@@ -156,10 +156,6 @@
             alt="Nice Store project mockup"
             class="project__img"
           />
-          <div class="project__content">
-            <h3>NiceStore</h3>
-            <p>project</p>
-          </div>
         </a>
         <!-- / Project 03 -->
         <!-- Project 04 -->
@@ -169,10 +165,6 @@
             alt="Burger Labs project mockup"
             class="project__img"
           />
-          <div class="project__content">
-            <h3>BurgerLabs</h3>
-            <p>project</p>
-          </div>
         </a>
         <!-- / Project 04 -->
       </div>
@@ -184,40 +176,37 @@
       <!-- Formspree form -->
       <form class="form" action="https://formspree.io/xwkrjpnw" method="POST">
         <div class="form__item">
-          <label class="form__label" for="name" aria-label="name label">Name</label>
+          <label class="form__label" for="name">Name</label>
           <input
             class="form__input"
             type="text"
             name="name"
             id="name"
-            aria-label="text input"
             required
           />
         </div>
 
         <div class="form__item">
-          <label class="form__label" for="email" aria-label="email label">Email</label>
+          <label class="form__label" for="email">Email</label>
           <input
             class="form__input"
             type="email"
             name="email"
             id="email"
-            aria-label="email input"
             required
           />
         </div>
 
         <div class="form__item">
-          <label class="form__label" for="message" aria-label="textarea label">Message</label>
+          <label class="form__label" for="message">Message</label>
           <textarea
             class="form__textarea"
             name="message"
             id="message"
-            aria-label="textarea"
             required
           ></textarea>
         </div>
-        <button class="btn" type="submit" aria-label="submit button">Send message</button>
+        <button class="btn" type="submit">Send message</button>
       </form>
     </section>
     <!-- / Contact -->

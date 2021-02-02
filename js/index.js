@@ -6,5 +6,5 @@ toggleButton.addEventListener('click', () => {
 });
 // Close navbar
 navbarLinks.addEventListener('click', () => {
-        navbarLinks.classList.remove('active');
+  navbarLinks.classList.remove('active');
 });
