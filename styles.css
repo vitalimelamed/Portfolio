@@ -376,7 +376,7 @@ h3 {
   border-radius: var(--border-radius);
   outline: none;
   padding: 1rem;
-  background-color: none;
+  background: none;
   z-index: 1;
   cursor: text;
 }
@@ -392,7 +392,7 @@ h3 {
   border-radius: var(--border-radius);
   outline: none;
   padding: 1rem;
-  background-color: none;
+  background: none;
   z-index: 1;
   cursor: text;
   resize: none;
@@ -402,7 +402,7 @@ h3 {
   left: 1rem;
   top: 1rem;
   padding: 0 0.25rem;
-  background-color: var(--light-color);
+  background: var(--light-color);
   color: var(--dark-color);
   font-size: var(--normal-font-size);
   transition: 0.3s;
@@ -416,7 +416,7 @@ h3 {
   margin-top: 1.5rem;
   outline: none;
   border: none;
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   color: var(--light-color);
   font-size: var(--normal-font-size);
   border-radius: var(--border-radius);
@@ -424,7 +424,7 @@ h3 {
   transition: 0.3s;
 }
 .form__submit:hover {
-    background-color: #046ad8;
+    background: #046ad8;
 }
 
 /* Input focus move up label */
