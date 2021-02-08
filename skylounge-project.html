@@ -27,34 +27,27 @@
       src="https://kit.fontawesome.com/1c770cafa0.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Google font -->
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body id="top">
-    <!-- Header -->
-    <header>
-      <!-- Navbar -->
-      <nav class="navbar">
-        <a href="/" class="portfolio-title">Vitali Melamed</a>
-        <button class="navbar-toggle" aria-label="toggle navigation">
-          <svg class="fal fa-bars"></svg>
-        </button>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/#skills">Skills</a></li>
-            <li><a href="/#profile">Profile</a></li>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- / Navbar -->
-    </header>
-    <!-- / Header -->
+  <body>
+    <!-- Nav -->
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+  </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#profile" class="nav__link">Profile</a></li>
+            <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- / Nav -->
     <!-- SkyLounge project -->
     <div class="project-item-individual">
       <h1>Sky Lounge</h1>
@@ -80,18 +73,18 @@
           href="https://vitalimelamed.github.io/SkyLounge/"
           target="_blank"
           class="btn"
-          >Live demo <svg class="fal fa-external-link"></svg
+          >Live demo <i class="fal fa-external-link"></i
         ></a>
         <a
           href="https://github.com/vitalimelamed/SkyLounge"
           target="_blank"
           class="btn"
-          >View code <svg class="fab fa-github"></svg
+          >View code <i class="fab fa-github"></i
         ></a>
       </div>
         <div class="group-two">
           <a href="blogtech-project.html" class="btn"
-            >Project <svg class="fal fa-arrow-right"></svg
+            >Project <i class="fal fa-arrow-right"></i
           ></a>
       </div>
     </div>
@@ -106,7 +99,7 @@
             href="https://github.com/vitalimelamed"
             target="_blank"
           >
-            <svg class="fab fa-github"></svg>
+            <i class="fab fa-github"></i>
           </a>
         </li>
         <!-- / GitHub icon -->
@@ -117,7 +110,7 @@
             href="https://www.linkedin.com/in/vitalimelamed"
             target="_blank"
           >
-            <svg class="fab fa-linkedin"></svg>
+            <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <!-- LinkedIn icon -->
@@ -128,7 +121,7 @@
             href="https://twitter.com/vitalimelamed"
             target="_blank"
           >
-            <svg class="fab fa-twitter"></svg>
+            <i class="fab fa-twitter"></i>
           </a>
         </li>
         <!-- / Twitter icon -->
@@ -139,7 +132,7 @@
             href="https://www.facebook.com/vitalimelamed"
             target="_blank"
           >
-            <svg class="fab fa-facebook"></svg>
+            <i class="fab fa-facebook"></i>
           </a>
         </li>
         <!-- / Facebook icon -->
@@ -155,6 +148,19 @@
     </footer>
     <!-- / Footer -->
     <!-- My JavaScript -->
-    <script src="js/index.js"></script>
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelectorAll('.nav__link');
+ 
+      navToggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+ });
+ 
+     navLinks.forEach(link => {
+       link.addEventListener('click', () => {
+         document.body.classList.remove('nav-open');
+     });
+ });
+     </script>
   </body>
 </html>
