@@ -41,10 +41,10 @@
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="#profile" class="nav__link">Profile</a></li>
-            <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="/#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="/#profile" class="nav__link">Profile</a></li>
+            <li class="nav__item"><a href="/#portfolio" class="nav__link">Portfolio</a></li>
+            <li class="nav__item"><a href="/#contact" class="nav__link">Contact</a></li>
         </ul>
     </nav>
     <!-- / Nav -->
@@ -131,25 +131,21 @@
         </li>
         <!-- / Facebook icon -->
       </ul>
-      <!-- Copyright -->
       <p class="footer__copyright">
         &copy;
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
         </script>
       </p>
-      <!-- / Copyright -->
     </footer>
     <!-- / Footer -->
      <!-- My JavaScript -->
      <script>
       const navToggle = document.querySelector('.nav-toggle');
       const navLinks = document.querySelectorAll('.nav__link');
- 
       navToggle.addEventListener('click', () => {
         document.body.classList.toggle('nav-open');
  });
- 
      navLinks.forEach(link => {
        link.addEventListener('click', () => {
          document.body.classList.remove('nav-open');

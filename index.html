@@ -38,6 +38,7 @@
         <button class="nav-toggle" aria-label="toggle navigation">
           <span class="hamburger"></span>
       </button>
+      <a class="btn-secondary" href="#portfolio">My Portfolio</a>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
@@ -53,8 +54,9 @@
       <h1 class="section__title section__title--introduction">
         Hi, I am <strong>Vitali Melamed</strong>
       </h1>
+      <h3></h3>
       <p class="section__subtitle section__subtitle--introduction">
-        Front end dev
+        I build amazing UI/UX experiences
       </p>
       <img
         src="img/profile-one.jpg"
@@ -95,7 +97,7 @@
         </div>
         <!-- / Skill 03 -->
       </div>
-      <a href="#portfolio" class="btn">Portfolio</a>
+      <a href="#portfolio" class="btn">My Portfolio</a>
     </section>
     <!-- / Skills -->
     <!-- Profile -->
@@ -250,25 +252,21 @@
         </li>
         <!-- / Facebook icon -->
       </ul>
-      <!-- Copyright -->
       <p class="footer__copyright">
         &copy;
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
         </script>
       </p>
-      <!-- / Copyright -->
     </footer>
     <!-- / Footer -->
     <!-- My JavaScript -->
     <script>
      const navToggle = document.querySelector('.nav-toggle');
      const navLinks = document.querySelectorAll('.nav__link');
-
      navToggle.addEventListener('click', () => {
        document.body.classList.toggle('nav-open');
 });
-
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         document.body.classList.remove('nav-open');
