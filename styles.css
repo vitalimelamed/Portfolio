@@ -56,6 +56,8 @@ section {
 img {
   display: block;
   max-width: 100%;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
 }
 strong {
   font-weight: var(--font-weight-bold);
@@ -218,9 +220,6 @@ h3 {
   font-weight: var(--font-weight-bold);
   margin-bottom: 1em;
 }
-.introduction__img {
-  box-shadow: var(--box-shadow);
-}
 .section__subtitle--introduction {
   display: inline-block;
 }
@@ -301,9 +300,6 @@ h3 {
   padding: 0.25em 1em;
   font-weight: var(--font-weight-bold);
   margin-bottom: 1em;
-}
-.profile__img {
-  box-shadow: var(--box-shadow);
 }
 /* Media query */
 @media (min-width: 600px) {
