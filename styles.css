@@ -2,8 +2,6 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 /* Custom properties */
@@ -43,6 +41,7 @@ body {
   font-size: var(--font-size-body);
   line-height: 1.6;
   color: var(--dark-color);
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -146,7 +145,7 @@ h3 {
 .nav__link {
   color: var(--dark-color);
   font-weight: var(--font-weight-bold);
-  font-size: 26px;
+  font-size: var(--font-size-h2);
   text-decoration: none;
 }
 .nav-toggle {
@@ -324,9 +323,6 @@ h3 {
     padding-left: 1em;
     padding-right: calc(200px + 4em);
   }
-  .profile-text {
-    padding: 0 2em;
-  }
   .profile__img {
     grid-area: img;
     position: relative;
@@ -347,7 +343,7 @@ h3 {
 }
 .project__img {
   width: 100%;
-  filter: brightness(60%);
+  filter: brightness(50%);
   transition: 0.3s;
 }
 .project__img:hover {
