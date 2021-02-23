@@ -38,6 +38,7 @@
         <button class="nav-toggle" aria-label="toggle navigation">
           <span class="hamburger"></span>
       </button>
+      <a href="#portfolio" class="btn">My portfolio</a>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
@@ -58,7 +59,7 @@
         front-end dev
       </p>
       <img
-        src="img/profile-one.png"
+        src="img/profile-one.jpg"
         alt="profile picture"
         class="introduction__img"
       />
@@ -96,7 +97,7 @@
         </div>
         <!-- / Skill 03 -->
       </div>
-      <a href="#portfolio" class="btn">My portfolio</a>
+      
     </section>
     <!-- / Skills -->
     <!-- Profile -->
@@ -115,7 +116,7 @@
           PHP.
         </p>
       <img
-        src="img/profile-two.png"
+        src="img/profile-two.jpg"
         alt="profile picture"
         class="profile__img"
       />
@@ -176,7 +177,7 @@
     <section class="contact" id="contact">
       <div class="wrapper">
         <!-- Form -->
-        <form action="https://formspree.io/f/xwkrjpnw" method="POST" class="form">
+        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" class="form">
             <h2 class="section__title section__title--contact">Contact</h2>
             <!-- Form group name -->
             <div class="form__group">
@@ -194,7 +195,7 @@
               <label for="message" class="form__label">Message</label>
           </div>
           <!-- Google recaptcha -->
-          <div class="g-recaptcha" data-sitekey="6LfD5koaAAAAAJLjTOtbyAHp2fcqnZ94ZmYQx2m-"></div>
+          <div data-netlify-recaptcha="true" class="g-recaptcha"></div>
           <!-- Submit button -->
           <button type="submit" class="form__submit">Send message</button>
         </form>

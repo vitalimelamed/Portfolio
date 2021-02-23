@@ -54,8 +54,6 @@ section {
 img {
   display: block;
   max-width: 100%;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
 }
 strong {
   font-weight: var(--font-weight-bold);
@@ -63,7 +61,8 @@ strong {
 /* Button */
 .btn {
   display: inline-block;
-  padding: 0.8em 1.2em;
+  margin: 0.5em 0 0 5em;
+  padding: 0.4em 1.2em;
   background-color: var(--primary-color);
   color: var(--light-color);
   border: none;
@@ -163,10 +162,9 @@ h3 {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background-color: var(--primary-color);
+  background-color: var(--dark-color);
   width: 2em;
   height: 3px;
-  border-radius: 1em;
   transition: transform 350ms ease;
 }
 .hamburger::before,
@@ -219,6 +217,7 @@ h3 {
     min-width: 250px;
     position: relative;
     z-index: 2;
+    box-shadow: var(--box-shadow);
   }
   .section__subtitle--introduction {
     align-self: start;
@@ -307,6 +306,7 @@ h3 {
     grid-area: img;
     position: relative;
     z-index: 2;
+    box-shadow: var(--box-shadow);
   }
 }
 /* Portfolio section */
@@ -400,6 +400,7 @@ h3 {
 }
 .form__submit {
   display: block;
+  width: 100%;
   padding: 0.75rem 2rem;
   margin-top: 1.5rem;
   outline: none;
