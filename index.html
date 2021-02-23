@@ -9,8 +9,6 @@
       gtag('js', new Date());
       gtag('config', 'G-EPFKGQ4L52');
     </script>
-    <!-- Google recaptcha -->
-    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vitali Melamed Portfolio</title>
@@ -195,7 +193,9 @@
               <label for="message" class="form__label">Message</label>
           </div>
           <!-- Recaptcha -->
+          <div class="form-recaptcha">
           <div data-netlify-recaptcha="true"></div>
+        </div>
           <!-- Submit button -->
           <button type="submit" class="form__submit">Send message</button>
         </form>
