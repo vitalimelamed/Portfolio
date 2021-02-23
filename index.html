@@ -10,7 +10,7 @@
       gtag('config', 'G-EPFKGQ4L52');
     </script>
     <!-- Google recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vitali Melamed Portfolio</title>
@@ -177,7 +177,7 @@
     <section class="contact" id="contact">
       <div class="wrapper">
         <!-- Form -->
-        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" class="form">
+        <form name="contact" method="POST" data-netlify="true" class="form">
             <h2 class="section__title section__title--contact">Contact</h2>
             <!-- Form group name -->
             <div class="form__group">
@@ -194,8 +194,8 @@
               <textarea name="message" id="message" class="form__textarea" placeholder=" " required></textarea>
               <label for="message" class="form__label">Message</label>
           </div>
-          <!-- Google recaptcha -->
-          <div data-netlify-recaptcha="true" class="g-recaptcha"></div>
+          <!-- Recaptcha -->
+          <div data-netlify-recaptcha="true"></div>
           <!-- Submit button -->
           <button type="submit" class="form__submit">Send message</button>
         </form>
