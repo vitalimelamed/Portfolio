@@ -132,7 +132,7 @@
             class="project__img"
           />
           <h3>Sky Lounge</h3>
-          <p>CSS flexbox project <i class="fal fa-arrow-right"></i></p>
+          <p>CSS flexbox project <i class="fas fa-arrow-right"></i></p>
         </a>
         <!-- / Project 01 -->
         <!-- Project 02 -->
@@ -143,7 +143,7 @@
             class="project__img"
           />
           <h3>BlogTech</h3>
-          <p>CSS grid project <i class="fal fa-arrow-right"></i></p>
+          <p>CSS grid project <i class="fas fa-arrow-right"></i></p>
         </a>
         <!-- / Project 02 -->
         <!-- Project 03 -->
@@ -154,7 +154,7 @@
             class="project__img"
           />
           <h3>Nice Store</h3>
-          <p>Bootstrap project <i class="fal fa-arrow-right"></i></p>
+          <p>Bootstrap project <i class="fas fa-arrow-right"></i></p>
         </a>
         <!-- / Project 03 -->
         <!-- Project 04 -->
@@ -165,7 +165,7 @@
             class="project__img"
           />
           <h3>Burger Labs</h3>
-          <p>Bootstrap project <i class="fal fa-arrow-right"></i></p>
+          <p>Bootstrap project <i class="fas fa-arrow-right"></i></p>
         </a>
         <!-- / Project 04 -->
       </div>
@@ -173,10 +173,10 @@
     <!-- / Portfolio -->
     <!-- Contact -->
     <section class="contact" id="contact">
+      <h2 class="section__title section__title--contact">Contact</h2>
       <div class="wrapper">
         <!-- Form -->
-        <form class="form" name="contact" method="POST" netlify>
-            <h2 class="section__title section__title--contact">Contact</h2>
+        <form class="form" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
             <!-- Form group name -->
             <div class="form__group">
                 <input type="text" name="name" id="name" class="form__input" placeholder=" " required>
@@ -193,9 +193,7 @@
               <label for="message" class="form__label">Message</label>
           </div>
           <!-- Recaptcha -->
-          <div class="form-recaptcha">
-          <div data-netlify-recaptcha="true"></div>
-        </div>
+          <div class="form-recaptcha" data-netlify-recaptcha="true"></div>
           <!-- Submit button -->
           <button type="submit" class="form__submit">Send message</button>
         </form>
