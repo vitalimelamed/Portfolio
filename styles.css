@@ -395,9 +395,9 @@ h3 {
   transition: 0.3s;
   cursor: text;
 }
-.g-recaptcha {
+/* .g-recaptcha {
   margin-top: 5em;
-}
+} */
 .form__submit {
   display: block;
   width: 100%;
