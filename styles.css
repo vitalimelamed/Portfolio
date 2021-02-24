@@ -69,7 +69,6 @@ strong {
   outline: none;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  font-size: 14px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -77,7 +76,7 @@ strong {
   background-color: #046ad8;
 }
 .link {
-  color: var(--dark-color);
+  color: inherit;
   margin: 0 0 0 1rem;
 }
 .link:hover {
@@ -364,7 +363,7 @@ h3 {
 .form__input {
   width: 100%;
   font-family: inherit;
-  font-size: var(--font-size-body);
+  font-size: inherit;
   border: 1px solid #d3d3d3;
   border-radius: var(--border-radius);
   outline: none;
@@ -381,7 +380,7 @@ textarea {
   border: none;
   background-color: var(--primary-color);
   color: var(--light-color);
-  font-size: var(--font-size-body);
+  font-size: 16px;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   cursor: pointer;
@@ -395,30 +394,23 @@ textarea {
   text-align: center;
   padding: 1em 0;
   font-size: var(--font-size-h3);
-}
-.footer a {
   color: inherit;
 }
-p.footer__copyright {
-  padding: 0;
-  margin: 0;
+.footer__text {
+  font-size: 14px;
 }
-.footer__copyright {
-  font-size: 1rem;
-}
-.social-list {
+.social__list {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 0.8em 0 0.8em;
   padding: 0;
 }
-.social-list__item {
-  margin: 0;
+.social__item {
   color: var(--primary-color);
 }
-.social-list__link {
-  margin: 0.5em;
+.social__link {
+  margin: 0.3em;
+  color: inherit;
 }
 /* Individual project page */
 .project-item-individual {
@@ -435,16 +427,12 @@ p.footer__copyright {
   margin: 4em auto;
 }
 .group-one {
-  display: flex;
-  justify-content: center;
-  font-size: 14px;
-  margin: 2em 0;
-}
-.group-one a:first-child  {
-  margin-right: 3px;
+  max-width: 600px;
+  margin: 2em auto;
+  text-align: center;
 }
 .group-two {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
