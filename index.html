@@ -125,48 +125,49 @@
       <h2 class="section__title section__title--portfolio">Portfolio</h2>
       <div class="projects">
         <!-- Project 01 -->
-        <a href="skylounge-project.html" class="project__item">
+        <div  class="project__item">
           <img
             src="img/SkyLounge-mockup.png"
             alt="Sky Lounge project mockup"
             class="project__img"
           />
           <h3>Sky Lounge</h3>
-          <p>CSS flexbox project <i class="fas fa-arrow-right"></i></p>
-        </a>
+          <a class="link" href="skylounge-project.html">CSS flexbox project <i class="fas fa-arrow-right"></i></a>
+        </div>
         <!-- / Project 01 -->
         <!-- Project 02 -->
-        <a href="blogtech-project.html" class="project__item">
+        <div class="project__item">
           <img
             src="img/BlogTech-mockup.png"
             alt="BlogTech project mockup"
             class="project__img"
           />
           <h3>BlogTech</h3>
-          <p>CSS grid project <i class="fas fa-arrow-right"></i></p>
-        </a>
+          <a class="link" href="blogtech-project.html">CSS grid project <i class="fas fa-arrow-right"></i></a>
+        </div>
         <!-- / Project 02 -->
         <!-- Project 03 -->
-        <a href="nicestore-project.html" class="project__item">
+        
+          <div class="project__item">
           <img
             src="img/NiceStore-mockup.png"
             alt="Nice Store project mockup"
             class="project__img"
           />
           <h3>Nice Store</h3>
-          <p>Bootstrap project <i class="fas fa-arrow-right"></i></p>
-        </a>
+          <a class="link" href="nicestore-project.html">Bootstrap project <i class="fas fa-arrow-right"></i></a>
+        </div>
         <!-- / Project 03 -->
         <!-- Project 04 -->
-        <a href="burgerlabs-project.html" class="project__item">
+        <div class="project__item">
           <img
             src="img/BurgerLabs-mockup.png"
             alt="Burger Labs project mockup"
             class="project__img"
           />
           <h3>Burger Labs</h3>
-          <p>Bootstrap project <i class="fas fa-arrow-right"></i></p>
-        </a>
+          <a class="link" href="burgerlabs-project.html">Bootstrap project <i class="fas fa-arrow-right"></i></a>
+        </div>
         <!-- / Project 04 -->
       </div>
     </section>
@@ -176,24 +177,22 @@
       <h2 class="section__title section__title--contact">Contact</h2>
       <div class="wrapper">
         <!-- Form -->
-        <form class="form" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+        <form class="kwes-form form" action="https://kwes.io/api/foreign/forms/R2q0uBaPsR6GoGPamen9" >
             <!-- Form group name -->
             <div class="form__group">
-                <input type="text" name="name" id="name" class="form__input" placeholder=" " required>
                 <label for="name" class="form__label">Name</label>
+                <input type="text" name="name" id="name" class="form__input" placeholder="e.g. John Smith" required >
             </div>
             <!-- Form group email -->
             <div class="form__group">
-                <input type="email" name="email" id="email" class="form__input" placeholder=" " required>
                 <label for="email" class="form__label">Email</label>
+                <input type="email" name="email" id="email" class="form__input" placeholder="you@email.com" required >
             </div>
             <!-- Form group message -->
             <div class="form__group">
-              <textarea name="message" id="message" class="form__textarea" placeholder=" " required></textarea>
               <label for="message" class="form__label">Message</label>
+              <textarea name="message" id="message" class="form__textarea" placeholder="How can we help you? Enter a detailed message!" required ></textarea>
           </div>
-          <!-- Recaptcha -->
-          <div class="form-recaptcha" data-netlify-recaptcha="true"></div>
           <!-- Submit button -->
           <button type="submit" class="form__submit">Send message</button>
         </form>
@@ -256,6 +255,7 @@
       </p>
     </footer>
     <!-- / Footer -->
+    <script src="https://kwes.io/v2/kwes-script.js" defer></script>
     <!-- My JavaScript -->
     <script>
      const navToggle = document.querySelector('.nav-toggle');
