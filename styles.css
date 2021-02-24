@@ -76,6 +76,14 @@ strong {
 .btn:hover {
   background-color: #046ad8;
 }
+.link {
+  color: var(--dark-color);
+  margin: 0 0 0 1rem;
+}
+.link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
 /* Typography */
 h1,
 h2,
@@ -323,11 +331,7 @@ h3 {
 }
 .project__img {
   width: 100%;
-  filter: brightness(50%);
-  transition: 0.3s;
-}
-.project__img:hover {
-  opacity: 0.8;
+  filter: brightness(80%);
 }
 .project__item h3 {
   color: var(--dark-color);
@@ -351,16 +355,14 @@ h3 {
   padding: 2rem;
 }
 .form__group {
-  position: relative;
-  height: 48px;
-  margin-bottom: 1.5rem;
+  margin: 2rem 0;
+}
+.form__label {
+  display: block;
+  width: 100%;
 }
 .form__input {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
   font-family: inherit;
   font-size: var(--font-size-body);
   border: 1px solid #d3d3d3;
@@ -370,11 +372,7 @@ h3 {
   background-color: transparent;
 }
 .form__textarea {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100px;
   font-family: inherit;
   font-size: var(--font-size-body);
   border: 1px solid #d3d3d3;
@@ -382,25 +380,11 @@ h3 {
   outline: none;
   padding: 1rem;
   background-color: transparent;
-  resize: none;
-}
-.form__label {
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-  padding: 0 0.25rem;
-  background-color: #ffffff;
-  color: var(--dark-color);
-  font-size: var(--font-size-body);
-  transition: 0.3s;
-  cursor: text;
-}
-.form-recaptcha {
-  margin-top: 5em;
+  resize: vertical;
 }
 .form__submit {
-  padding: 0.75rem 2rem;
-  margin-top: 1.5rem;
+  width: 100%;
+  padding: 1rem;
   outline: none;
   border: none;
   background-color: var(--primary-color);
@@ -414,44 +398,6 @@ h3 {
 .form__submit:hover {
     background-color: #046ad8;
 }
-/* Input focus move up label */
-.form__input:focus + .form__label {
-  top: -0.5rem;
-  left: 0.8rem;
-  color: var(--primary-color);
-  font-size: var(--small-font-size);
-  font-weight: var(--font-weight-regular);
-}
-/* Input focus sticky top label */
-.form__input:not(:placeholder-shown).form__input:not(:focus)+ .form__label {
-  top: -0.5rem;
-  left: 0.8rem;
-  font-size: var(--small-font-size);
-  font-weight: var(--font-weight-regular);
-}
-/* Input focus */
-.form__input:focus {
-  border: 1.5px solid var(--primary-color);
-}
-/* Textarea focus move up label */
-.form__textarea:focus + .form__label {
-    top: -0.5rem;
-    left: 0.8rem;
-    color: var(--primary-color);
-    font-size: var(--small-font-size);
-    font-weight: var(--font-weight-regular);
-  }
-  /* Textarea focus sticky top label */
-  .form__textarea:not(:placeholder-shown).form__textarea:not(:focus)+ .form__label {
-    top: -0.5rem;
-    left: 0.8rem;
-    font-size: var(--small-font-size);
-    font-weight: var(--font-weight-regular);
-  }
-  /* Textarea focus */
-  .form__textarea:focus {
-    border: 1.5px solid var(--primary-color);
-  }
 /* Footer */
 .footer {
   text-align: center;
