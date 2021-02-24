@@ -371,16 +371,8 @@ h3 {
   padding: 1rem;
   background-color: transparent;
 }
-.form__textarea {
-  width: 100%;
-  font-family: inherit;
-  font-size: var(--font-size-body);
-  border: 1px solid #d3d3d3;
-  border-radius: var(--border-radius);
-  outline: none;
-  padding: 1rem;
-  background-color: transparent;
-  resize: vertical;
+textarea {
+  resize: none;
 }
 .form__submit {
   width: 100%;
