@@ -11,7 +11,7 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vitali Melamed Portfolio</title>
+    <title>Home | Vitali Melamed</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -28,8 +28,10 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- My CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
         <!-- Nav -->
@@ -132,7 +134,7 @@
             class="project__img"
           />
           <h3>Sky Lounge</h3>
-          <a class="link" href="skylounge-project.html">CSS flexbox project <i class="fas fa-arrow-right"></i></a>
+          <a class="arrow-link-right" href="/skylounge-project.html">View project <i class="fal fa-long-arrow-right"></i></a>
         </div>
         <!-- / Project 1 -->
         <!-- Project 2 -->
@@ -143,7 +145,7 @@
             class="project__img"
           />
           <h3>BlogTech</h3>
-          <a class="link" href="blogtech-project.html">CSS grid project <i class="fas fa-arrow-right"></i></a>
+          <a class="arrow-link-right" href="/blogtech-project.html">View project <i class="fal fa-long-arrow-right"></i></a>
         </div>
         <!-- / Project 2 -->
         <!-- Project 3 -->
@@ -155,7 +157,7 @@
             class="project__img"
           />
           <h3>Nice Store</h3>
-          <a class="link" href="nicestore-project.html">Bootstrap project <i class="fas fa-arrow-right"></i></a>
+          <a class="arrow-link-right" href="/nicestore-project.html">View project <i class="fal fa-long-arrow-right"></i></a>
         </div>
         <!-- / Project 3 -->
         <!-- Project 4 -->
@@ -166,7 +168,7 @@
             class="project__img"
           />
           <h3>Burger Labs</h3>
-          <a class="link" href="burgerlabs-project.html">Bootstrap project <i class="fas fa-arrow-right"></i></a>
+          <a class="arrow-link-right" href="/burgerlabs-project.html">View project <i class="fal fa-long-arrow-right"></i></a>
         </div>
         <!-- / Project 4 -->
       </div>
@@ -181,21 +183,18 @@
         <form class="kwes-form" action="https://kwes.io/api/foreign/forms/40N5TtWI4rS1rXiD8rAT">
             <!-- Form group 1 -->
             <div class="form__group">
-                <label for="name" class="form__label">Name</label>
-                <input type="text" name="name" id="name" class="form__input" required>
-            </div>
+                <input type="text" name="name" class="form__input" data-kw-rules="required|max:20" placeholder="Name">
+              </div>
             <!-- Form group 2 -->
             <div class="form__group">
-                <label for="email" class="form__label">Email</label>
-                <input type="email" name="email" id="email" class="form__input" required>
-            </div>
+                <input type="email" name="email" class="form__input" data-kw-rules="required|email" placeholder="Email">
+              </div>
             <!-- Form group 3 -->
             <div class="form__group">
-              <label for="message" class="form__label">Message</label>
-              <textarea name="message" id="message" class="form__input" rows="6" required></textarea>
-          </div>
+              <textarea name="message" class="form__input" data-kw-rules="required|max:255" placeholder="Message" rows="6"></textarea>
+            </div>
           <!-- Submit -->
-          <button type="submit" class="form__submit">Send message</button>
+          <button type="submit" class="form__btn">Send message</button>
         </form>
       </div>
         <!-- / Form -->
@@ -212,7 +211,7 @@
             href="https://github.com/vitalimelamed"
             target="_blank"
           >
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github-square"></i>
           </a>
         </li>
         <!-- / GitHub icon -->
@@ -234,7 +233,7 @@
             href="https://twitter.com/vitalimelamed"
             target="_blank"
           >
-            <i class="fab fa-twitter"></i>
+            <i class="fab fa-twitter-square"></i>
           </a>
         </li>
         <!-- / Twitter icon -->
@@ -245,7 +244,7 @@
             href="https://www.facebook.com/vitalimelamed"
             target="_blank"
           >
-            <i class="fab fa-facebook"></i>
+            <i class="fab fa-facebook-square"></i>
           </a>
         </li>
         <!-- / Facebook icon -->
@@ -261,17 +260,6 @@
     <!-- Kwes Form JavaScript -->
     <script src="https://kwes.io/v2/kwes-script.js" defer></script>
     <!-- My JavaScript -->
-    <script>
-     const navToggle = document.querySelector('.nav-toggle');
-     const navLinks = document.querySelectorAll('.nav__link');
-     navToggle.addEventListener('click', () => {
-       document.body.classList.toggle('nav-open');
-});
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    });
-});
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>

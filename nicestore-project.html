@@ -11,7 +11,7 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vitali Melamed Portfolio</title>
+    <title>Portfolio | Vitali Melamed</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -28,8 +28,10 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- My CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <!-- Nav -->
@@ -69,19 +71,19 @@
           href="https://vitalimelamed.github.io/NiceStore/"
           target="_blank"
           class="link"
-          >Live demo <i class="fas fa-external-link"></i></a>
+          >Live demo</a>
         <a
           href="https://github.com/vitalimelamed/NiceStore"
           target="_blank"
           class="link"
-          >View code <i class="fas fa-external-link"></i></a>
+          >View code</a>
       </div>
         <div class="group-two">
-          <a href="blogtech-project.html" class="link"
-            ><i class="fas fa-arrow-left"></i> Project</a
+          <a href="/blogtech-project.html" class="arrow-link-left"
+            ><i class="fal fa-long-arrow-left"></i> Project</a
           >
-          <a href="burgerlabs-project.html" class="link"
-            >Project <i class="fas fa-arrow-right"></i
+          <a href="/burgerlabs-project.html" class="arrow-link-right"
+            >Project <i class="fal fa-long-arrow-right"></i
           ></a>
         </div>
     </div>
@@ -96,7 +98,7 @@
             href="https://github.com/vitalimelamed"
             target="_blank"
           >
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github-square"></i>
           </a>
         </li>
         <!-- / GitHub icon -->
@@ -118,7 +120,7 @@
             href="https://twitter.com/vitalimelamed"
             target="_blank"
           >
-            <i class="fab fa-twitter"></i>
+            <i class="fab fa-twitter-square"></i>
           </a>
         </li>
         <!-- / Twitter icon -->
@@ -129,7 +131,7 @@
             href="https://www.facebook.com/vitalimelamed"
             target="_blank"
           >
-            <i class="fab fa-facebook"></i>
+            <i class="fab fa-facebook-square"></i>
           </a>
         </li>
         <!-- / Facebook icon -->
@@ -143,17 +145,6 @@
     </footer>
     <!-- / Footer -->
      <!-- My JavaScript -->
-     <script>
-      const navToggle = document.querySelector('.nav-toggle');
-      const navLinks = document.querySelectorAll('.nav__link');
-      navToggle.addEventListener('click', () => {
-        document.body.classList.toggle('nav-open');
- });
-     navLinks.forEach(link => {
-       link.addEventListener('click', () => {
-         document.body.classList.remove('nav-open');
-     });
- });
-     </script>
+     <script src="js/index.js"></script>
   </body>
 </html>
