@@ -40,6 +40,7 @@ body {
 }
 a {
   text-decoration: none;
+  outline: none;
 }
 section {
   padding: 5em 0.5em;
@@ -60,10 +61,30 @@ strong {
   border-radius: var(--border-radius);
   box-shadow: 0 10px 1em rgba(48, 48, 48, 0.3);
   cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.btn:hover,
+.btn:active {
+  color: var(--light-color);
+  background-color: #0568d1;
 }
 .link {
   color: var(--primary-color);
   margin: 0 0 0 0.5rem;
+}
+.link:hover,
+.link:active {
+  text-decoration: underline;
+}
+.fa-external-link {
+  color: var(--primary-color);
+  margin-left: 5px;
+}
+.fa-long-arrow-left {
+  margin-right: 5px;
+}
+.fa-long-arrow-right {
+  margin-left: 5px;
 }
 /* Typography */
 h1,
@@ -99,7 +120,7 @@ h3 {
   right: 0;
   z-index: 100;
   transform: translateY(-100%);
-  transition: 0.3s;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 .nav__list {
   list-style: none;
@@ -115,6 +136,11 @@ h3 {
   color: var(--dark-color);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-h2);
+  transition: color 0.3s ease;
+}
+.nav__link:hover,
+.nav__link:active {
+  color: var(--primary-color);
 }
 .nav-toggle {
   position: absolute;
@@ -122,7 +148,7 @@ h3 {
   left: 1em;
   width: 35px;
   height: 20px;
-  padding: 0.5em;
+  padding: 0.2em;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -152,7 +178,7 @@ h3 {
   background-color: var(--dark-color);
   width: 25px;
   height: 2px;
-  transition: 0.3s;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background-color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 .hamburger::before,
 .hamburger::after {
@@ -309,11 +335,13 @@ h3 {
   width: 100%;
   font-family: inherit;
   font-size: inherit;
-  border: none;
   border: 1px solid #d3d3d3;
   border-radius: var(--border-radius);
   outline: none;
   padding: 1rem;
+}
+.form__input:focus {
+  border: 1px solid var(--primary-color);
 }
 textarea {
   resize: none;
@@ -327,6 +355,12 @@ textarea {
   box-shadow: 0 10px 1em rgba(48, 48, 48, 0.3);
   border: none;
   cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.form__btn:hover,
+.form__btn:active {
+  color: var(--light-color);
+  background-color: #0568d1;
 }
 /* Footer */
 .footer {
@@ -347,6 +381,11 @@ textarea {
   font-size: 2rem;
   margin: 0.3em;
   color: inherit;
+  transition: color 0.3s ease;
+}
+.social__link:hover,
+.social__link:active {
+  color: var(--primary-color);
 }
 /* Project */
 .project-item-individual {
