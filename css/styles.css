@@ -347,6 +347,9 @@ h3 {
   outline: none;
   padding: 1rem;
 }
+.form__input:hover {
+  border: rgb(48, 48, 48) 1px solid;
+}
 .form__input:focus {
   border: 1px solid var(--primary-color);
 }
