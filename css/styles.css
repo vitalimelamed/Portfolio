@@ -70,11 +70,13 @@ strong {
 }
 .link {
   color: var(--primary-color);
-  margin: 0 0 0 0.5rem;
 }
 .link:hover,
 .link:active {
   text-decoration: underline;
+}
+.mr {
+  margin-right: 0.5em;
 }
 .fa-external-link {
   color: var(--primary-color);
@@ -225,6 +227,7 @@ h3 {
     grid-area: img;
     min-width: 250px;
     box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
   }
   .section__subtitle--intro {
     grid-column: -1 / 1;
@@ -289,6 +292,7 @@ h3 {
   }
   .profile__img {
     box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
   }
 }
 /* Portfolio */
@@ -305,11 +309,14 @@ h3 {
 }
 .project__item {
   margin: 1rem;
-  padding: 1rem;
+  padding: 2em;
   text-align: center;
+  background-color: transparent;
+  box-shadow: 0 0.5em 1em -0.125em rgb(48 48 48 / 10%), 0 0 0 1px rgb(48 48 48 / 2%);
+  border-radius: var(--border-radius);
 }
 .project__item h3 {
-  margin: 1em 0;
+  margin: 2em 0 1em 0;
 }
 /* Contact */
 .contact {
@@ -319,7 +326,7 @@ h3 {
 .section__title--contact {
   text-align: center;
 }
-.wrapper {
+.form__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -343,8 +350,9 @@ h3 {
 .form__input:focus {
   border: 1px solid var(--primary-color);
 }
-textarea {
-  resize: none;
+.form__textarea {
+  height: 128px;
+  resize: vertical;
 }
 .form__btn {
   width: 100%;
@@ -388,7 +396,7 @@ textarea {
 .social__link:active {
   color: var(--primary-color);
 }
-/* Project */
+/* Project page */
 .project-item-individual {
   padding: 1em 2em 2em;
   max-width: 1000px;
