@@ -393,11 +393,14 @@ h3 {
   font-size: 2rem;
   margin: 0.3em;
   color: inherit;
-  transition: color 0.3s ease;
+  top: 2px;
+  position: relative;
 }
 .social__link:hover,
 .social__link:active {
   color: var(--accent-color);
+  top: -2px;
+  transition: all 0.1s ease-in-out;
 }
 /* Project page */
 .project-item-individual {
