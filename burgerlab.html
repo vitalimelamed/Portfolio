@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- global site tag (gtag.js) - google analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPFKGQ4L52"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -11,8 +11,8 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Vitali Melamed</title>
-    <!-- Favicon -->
+    <title>My Work | Vitali Melamed</title>
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -20,45 +20,38 @@
     <meta name="msapplication-config" content="/browserconfig.xml" />
     <meta name="msapplication-TileColor" content="#f9f9f9" />
     <meta name="theme-color" content="#f9f9f9" />
-    <!-- Font awesome -->
-    <script
-      src="https://kit.fontawesome.com/1c770cafa0.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google fonts -->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-     <!-- Normalize CSS -->
+     <!-- normalize -->
      <link rel="stylesheet" href="css/normalize.css">
-     <!-- My CSS -->
      <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <!-- Nav -->
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
+    <!-- menu -->
+    <button class="menu-toggle" aria-label="menu toggle">
+      <span class="bar"></span>
   </button>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="/#skills" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="/#profile" class="nav__link">Profile</a></li>
-            <li class="nav__item"><a href="/#portfolio" class="nav__link">Portfolio</a></li>
-            <li class="nav__item"><a href="/#contact" class="nav__link">Contact</a></li>
+    <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item"><a href="/" class="menu-link">Home</a></li>
+          <li class="menu-item"><a href="/#my-services" class="menu-link">My Services</a></li>
+          <li class="menu-item"><a href="/#about-me" class="menu-link">About Me</a></li>
+          <li class="menu-item"><a href="/#my-work" class="menu-link">My Work</a></li>
+          <li class="menu-item"><a href="/#contact-me" class="menu-link">Contact Me</a></li>
         </ul>
     </nav>
-    <!-- / Nav -->
-    <!-- burgerlab project -->
+    <!-- / menu -->
+    <!-- project -->
     <div class="project-item-individual">
       <h1>BurgerLab</h1>
+      <img
+        src="img/burgerlab.jpg"
+      />
       <p>
         Restaurant website built with Bootstrap CSS front-end framework. Showcasing HTML,
         CSS skills. The project consists of a landing page.
       </p>
-      <img
-        src="img/burgerlab.jpeg"
-        alt="burgerlab project"
-      />
       <p>
         The project uses a carousel slider component. The project is mobile responsive using media queries.
       </p>
@@ -67,78 +60,64 @@
           href="https://burgerlab.netlify.app"
           target="_blank"
           class="link mr"
-          >Live demo<i class="fal fa-external-link"></i></a>
+          >Live demo</a>
         <a
           href="https://github.com/vitalimelamed/burgerlab"
           target="_blank"
           class="link"
-          >View code<i class="fal fa-external-link"></i></a>
+          >View code</a>
         </div>
         <div class="group-two">
           <a href="/digilab.html" class="link"
-            ><i class="fal fa-long-arrow-left"></i>Project</a
+            >Previous project</a
           >
         </div>
     </div>
-    <!-- / burgerlab project -->
-    <!-- Footer -->
+    <!-- / project -->
+    <!-- footer -->
     <footer class="footer">
-      <ul class="social__list">
-        <!-- GitHub icon -->
-        <li class="social__item">
+      <ul class="social-list">
+        <li class="social-item">
           <a
-            class="social__link"
+            class="social-link"
             href="https://github.com/vitalimelamed"
             target="_blank"
-          >
-            <i class="fab fa-github-square"></i>
+          >GitHub
           </a>
         </li>
-        <!-- / GitHub icon -->
-        <!-- LinkedIn icon -->
-        <li class="social__item">
+        <li class="social-item">
           <a
-            class="social__link"
+            class="social-link"
             href="https://www.linkedin.com/in/vitalimelamed"
             target="_blank"
-          >
-            <i class="fab fa-linkedin"></i>
+          >LinkedIn
           </a>
         </li>
-        <!-- LinkedIn icon -->
-        <!-- Twitter icon -->
-        <li class="social__item">
+        <li class="social-item">
           <a
-            class="social__link"
+            class="social-link"
             href="https://twitter.com/vitalimelamed"
             target="_blank"
-          >
-            <i class="fab fa-twitter-square"></i>
+          >Twitter
           </a>
         </li>
-        <!-- / Twitter icon -->
-        <!-- Facebook icon -->
-        <li class="social__item">
+        <li class="social-item">
           <a
-            class="social__link"
+            class="social-link"
             href="https://www.facebook.com/vitalimelamed"
             target="_blank"
-          >
-            <i class="fab fa-facebook-square"></i>
+          >Facebook
           </a>
         </li>
-        <!-- / Facebook icon -->
       </ul>
-      <p class="footer__text">
+      <p class="footer-text">
         &copy;
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
         </script>
-        Vitali Melamed
       </p>
     </footer>
-    <!-- / Footer -->
-     <!-- My JavaScript -->
+    <!-- / footer -->
      <script src="js/index.js"></script>
   </body>
 </html>
