@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- global site tag (gtag.js) - google analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPFKGQ4L52"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -12,7 +12,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Vitali Melamed</title>
-    <!-- Favicon -->
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -20,250 +20,217 @@
     <meta name="msapplication-config" content="/browserconfig.xml" />
     <meta name="msapplication-TileColor" content="#f9f9f9" />
     <meta name="theme-color" content="#f9f9f9" />
-    <!-- Font awesome -->
-    <script
-      src="https://kit.fontawesome.com/1c770cafa0.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google fonts -->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-    <!-- Normalize CSS -->
+    <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- My CSS -->
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-        <!-- Nav -->
-        <button class="nav-toggle" aria-label="toggle navigation">
-          <span class="hamburger"></span>
+        <!-- menu -->
+        <button class="menu-toggle" aria-label="menu toggle">
+          <span class="bar"></span>
       </button>
-      <a href="#portfolio" class="btn">My portfolio</a>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                <li class="nav__item"><a href="#profile" class="nav__link">Profile</a></li>
-                <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      <a href="#my-work" class="btn">My work</a>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="/" class="menu-link">Home</a></li>
+                <li class="menu-item"><a href="#my-services" class="menu-link">My Services</a></li>
+                <li class="menu-item"><a href="#about-me" class="menu-link">About Me</a></li>
+                <li class="menu-item"><a href="#my-work" class="menu-link">My Work</a></li>
+                <li class="menu-item"><a href="#contact-me" class="menu-link">Contact Me</a></li>
             </ul>
         </nav>
-        <!-- / Nav -->
-    <!-- Intro -->
+        <!-- / menu -->
+    <!-- intro -->
     <section class="intro">
-      <h1 class="section__title section__title--intro">
+      <h1 class="section-title section-title-intro">
         Hi, I am <strong>Vitali Melamed</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">
+      <p class="section-subtitle section-subtitle-intro">
         I build amazing web experiences
       </p>
       <img
-        src="img/vitali-melamed.jpg"
-        alt="profile image of Vitali Melamed"
-        class="intro__img"
+        src="img/about.jpg"
+        class="intro-img"
       />
     </section>
-    <!-- / Intro -->
-    <!-- Skills -->
-    <section class="skills" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <div class="skillset">
-        <!-- Skill 1 -->
-        <div class="skill">
+    <!-- / intro -->
+    <!-- my services -->
+    <section id="my-services" class="my-services">
+      <h2 class="section-title">My Services</h2>
+      <div class="services">
+        <!-- service 1 -->
+        <div class="service">
           <h3>Development</h3>
           <p>
-            Build a website using HTML, CSS and JavaScript. Specialising in CSS
-            front-end frameworks such as Bootstrap.
+            Build website using HTML, CSS and JavaScript. Specialise in CSS
+            front-end frameworks.
           </p>
         </div>
-        <!-- / Skill 1 -->
-        <!-- Skill 2 -->
-        <div class="skill">
+        <!-- / service 1 -->
+        <!-- service 2 -->
+        <div class="service">
           <h3>WordPress</h3>
           <p>
-            Build a website using WordPress Themes. Can be customised
-            accordingly if needed.
+            Build website using WordPress. Can be customised by request.
           </p>
         </div>
-        <!-- / Skill 2 -->
-        <!-- Skill 3 -->
-        <div class="skill">
+        <!-- / service 2 -->
+        <!-- service 3 -->
+        <div class="service">
           <h3>Design</h3>
-          <p>
-            Working with Figma tool primarily. Can create a mockup of User
-            Interface for the front-end of a website.
+          <p>Design a mockup of UI/UX for a website.
           </p>
         </div>
-        <!-- / Skill 3 -->
+        <!-- / service 3 -->
       </div>
-      
     </section>
-    <!-- / Skills -->
-    <!-- Profile -->
-    <section id="profile" class="profile">
-      <h2 class="section__title section__title--profile">Profile</h2>
-      <p class="section__subtitle section__subtitle--profile">
+    <!-- / my services -->
+    <!-- about me -->
+    <section id="about-me" class="about-me">
+      <h2 class="section-title-about">About Me</h2>
+      <p class="section-subtitle-about">
         Front-end web developer based in Melbourne, Australia
       </p>
-        <p class="profile__text">
+        <p class="about-text">
           Hello I am Vitali Melamed. I am a front-end web developer based in
           Melbourne, AU. I like coding with a passion. I specialise in
-          front-end web dev working with HTML, CSS & SCSS with some
+          front-end web dev working with HTML, CSS with some
           exposure to the back-end as well. Technologies and frameworks I have
           exposure to include Node, React, Vue, Bootstrap and WordPress just to
           name a few. Programming languages I work with include JavaScript &
           PHP.
         </p>
       <img
-        src="img/imac-on-desk.jpg"
-        alt="imac vs code text editor open showing code"
-        class="profile__img"
+        src="img/code.jpg"
+        class="about-img"
       />
     </section>
-    <!-- / Profile -->
-    <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
-      <h2 class="section__title section__title--portfolio">Portfolio</h2>
+    <!-- / about me -->
+    <!-- my work -->
+    <section id="my-work" class="my-work">
+      <h2 class="section-title section-title-projects">My Work</h2>
       <div class="projects">
-        <!-- Project 1 -->
-        <div  class="project__item">
+        <!-- project 1 -->
+        <div  class="project-item">
           <img
-            src="img/skylounge.jpeg"
-            alt="skylounge project"
-            class="project__img"
+            src="img/skylounge.jpg"
+            class="project-img"
           />
           <h3>SkyLounge</h3>
-          <p>Hotel website built using HTML, CSS flexbox and JavaScript.</p>
-          <a class="link" href="/skylounge.html">View project<i class="fal fa-long-arrow-right"></i></a>
+          <p>Hotel website built using HTML, CSS</p>
+          <a class="link" href="/skylounge.html">View project</a>
         </div>
-        <!-- / Project 1 -->
-        <!-- Project 2 -->
-        <div class="project__item">
+        <!-- / project 1 -->
+        <!-- project 2 -->
+        <div class="project-item">
           <img
-            src="img/techpost.jpeg"
-            alt="techpost project"
-            class="project__img"
+            src="img/techpost.jpg"
+            class="project-img"
           />
           <h3>TechPost</h3>
-          <p>Blog website built using HTML, CSS grid and JavaScript.</p>
-          <a class="link" href="/techpost.html">View project<i class="fal fa-long-arrow-right"></i></a>
+          <p>Blog website built using HTML, CSS</p>
+          <a class="link" href="/techpost.html">View project</a>
         </div>
-        <!-- / Project 2 -->
-        <!-- Project 3 -->
-        
-          <div class="project__item">
+        <!-- / project 2 -->
+        <!-- project 3 -->
+          <div class="project-item">
           <img
-            src="img/digilab.jpeg"
-            alt="digilab project"
-            class="project__img"
+            src="img/digilab.jpg"
+            class="project-img"
           />
           <h3>DigiLab</h3>
-          <p>Store website built using Bootstrap and Font Awesome.</p>
-          <a class="link" href="/digilab.html">View project<i class="fal fa-long-arrow-right"></i></a>
+          <p>Store website built using Bootstrap</p>
+          <a class="link" href="/digilab.html">View project</a>
         </div>
-        <!-- / Project 3 -->
-        <!-- Project 4 -->
-        <div class="project__item">
+        <!-- / project 3 -->
+        <!-- project 4 -->
+        <div class="project-item">
           <img
-            src="img/burgerlab.jpeg"
-            alt="burgerlab project"
-            class="project__img"
+            src="img/burgerlab.jpg"
+            class="project-img"
           />
           <h3>BurgerLab</h3>
-          <p>Restaurant website built using Bootstrap.</p>
-          <a class="link" href="/burgerlab.html">View project<i class="fal fa-long-arrow-right"></i></a>
+          <p>Restaurant website built using Bootstrap</p>
+          <a class="link" href="/burgerlab.html">View project</a>
         </div>
-        <!-- / Project 4 -->
+        <!-- / project 4 -->
       </div>
     </section>
-    <!-- / Portfolio -->
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <h2 class="section__title section__title--contact">Contact</h2>
-      <div class="form__wrapper">
-        <!-- Form -->
+    <!-- / my work -->
+    <!-- contact me -->
+    <section id="contact-me" class="contact-me">
+      <h2 class="section-title section-title-contact">Contact Me</h2>
+      <div class="form-wrapper">
+        <!-- form -->
         <div class="form">
         <form class="kwes-form" action="https://kwes.io/api/foreign/forms/40N5TtWI4rS1rXiD8rAT">
-            <!-- Form group 1 -->
-            <div class="form__group">
-                <input type="text" name="name" class="form__input" data-kw-rules="required|max:20" placeholder="Your Name">
+            <!-- form group -->
+            <div class="form-group">
+                <input type="text" name="name" class="form-input" data-kw-rules="required|max:20" placeholder="Your Name">
               </div>
-            <!-- Form group 2 -->
-            <div class="form__group">
-                <input type="email" name="email" class="form__input" data-kw-rules="required|email" placeholder="Your Email Address">
+            <!-- form group -->
+            <div class="form-group">
+                <input type="email" name="email" class="form-input" data-kw-rules="required|email" placeholder="Your Email">
               </div>
-            <!-- Form group 3 -->
-            <div class="form__group">
-              <textarea name="message" class="form__input form__textarea" data-kw-rules="required|max:255" placeholder="Your Message"></textarea>
+            <!-- form group -->
+            <div class="form-group">
+              <textarea name="message" class="form-input form-textarea" data-kw-rules="required|max:255" placeholder="Your Message"></textarea>
             </div>
-          <!-- Submit -->
-          <button type="submit" class="form__btn">Send message</button>
+          <button type="submit" class="form-btn">Send message</button>
         </form>
       </div>
-        <!-- / Form -->
+        <!-- / form -->
         </div>
     </section>
-    <!-- / Contact -->
-    <!-- Footer -->
+    <!-- / contact me -->
+    <!-- footer -->
     <footer class="footer">
-      <ul class="social__list">
-        <!-- GitHub icon -->
-        <li class="social__item">
+      <ul class="social-list">
+        <li class="social-item">
           <a
-            class="social__link"
+            class="social-link"
             href="https://github.com/vitalimelamed"
             target="_blank"
-          >
-            <i class="fab fa-github-square"></i>
+          >GitHub
           </a>
         </li>
-        <!-- / GitHub icon -->
-        <!-- LinkedIn icon -->
-        <li class="social__item">
+        <li class="social-item">
           <a
-            class="social__link"
+            class="social-link"
             href="https://www.linkedin.com/in/vitalimelamed"
             target="_blank"
-          >
-            <i class="fab fa-linkedin"></i>
+          >LinkedIn
           </a>
         </li>
-        <!-- LinkedIn icon -->
-        <!-- Twitter icon -->
-        <li class="social__item">
+        <li class="social-item">
           <a
-            class="social__link"
+            class="social-link"
             href="https://twitter.com/vitalimelamed"
             target="_blank"
-          >
-            <i class="fab fa-twitter-square"></i>
+          >Twitter
           </a>
         </li>
-        <!-- / Twitter icon -->
-        <!-- Facebook icon -->
-        <li class="social__item">
+        <li class="social-item">
           <a
-            class="social__link"
+            class="social-link"
             href="https://www.facebook.com/vitalimelamed"
             target="_blank"
-          >
-            <i class="fab fa-facebook-square"></i>
+          >Facebook
           </a>
         </li>
-        <!-- / Facebook icon -->
       </ul>
-      <p class="footer__text">
+      <p class="footer-text">
         &copy;
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
         </script>
-        Vitali Melamed
       </p>
     </footer>
-    <!-- / Footer -->
-    <!-- Kwes Form JavaScript -->
+    <!-- / footer -->
     <script src="https://kwes.io/v2/kwes-script.js" defer></script>
-    <!-- My JavaScript -->
     <script src="js/index.js"></script>
   </body>
 </html>
