@@ -36,7 +36,6 @@ body {
   font-size: var(--font-size-body);
   line-height: 1.6;
   color: var(--dark-color);
-  background-color: var(--light-color);
   margin: 0;
 }
 section {
@@ -98,8 +97,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
-  color: var(--dark-color);
+  background-color: var(--accent-color);
+  color: var(--light-color);
 }
 .navbar-brand {
   font-size: 1.5rem;
@@ -119,7 +118,7 @@ h3 {
 .navbar-link {
   display: block;
   text-decoration: none;
-  color: var(--dark-color);
+  color: var(--light-color);
   margin: 1rem;
   font-size: 14px;
   text-transform: uppercase;
@@ -162,7 +161,7 @@ h3 {
     position: absolute;
     content: '';
     right: 0;
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     width: 35px;
     height: 4px;
     border-radius: 4px;
@@ -272,9 +271,6 @@ h3 {
   }
 }
 /* portfolio */
-/* .section-title-portfolio {
-  text-align: center;
-} */
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -283,7 +279,6 @@ h3 {
   margin: 1rem;
   padding: 2rem;
   text-align: center;
-  background-color: #fff;
   box-shadow: 0 0.5rem 1rem -0.125rem rgba(48, 48, 48, 0.1), 0 0 0 1px rgba(48, 48, 48, 0.2);
   border-radius: var(--border-radius);
 }
@@ -302,9 +297,6 @@ h3 {
   text-decoration: none;
 }
 /* contact */
-/* .section-title-contact {
-  text-align: center;
-} */
 .form-wrapper {
   display: flex;
   justify-content: center;
@@ -344,7 +336,6 @@ h3 {
 .footer {
   height: 100px;
   text-align: center;
-  background-color: #ffffff;
   color: var(--dark-color);
   border-radius: var(--border-radius);
 }
