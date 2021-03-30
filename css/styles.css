@@ -103,7 +103,6 @@ h3 {
 }
 .navbar-brand {
   font-size: 1.5rem;
-  font-weight: 700;
   margin-right: auto;
   padding: 1rem;
   text-transform: uppercase;
@@ -118,12 +117,11 @@ h3 {
   list-style: none;
 }
 .navbar-link {
-  font-weight: 500;
   display: block;
   text-decoration: none;
   color: var(--dark-color);
   margin: 1rem;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
