@@ -11,7 +11,7 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Work | Vitali Melamed</title>
+    <title>Vitali Melamed Portfolio</title>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -28,92 +28,99 @@
      <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <!-- menu -->
-    <button class="menu-toggle" aria-label="menu toggle">
-      <span class="bar"></span>
-  </button>
-    <nav class="menu">
-        <ul class="menu-list">
-          <li class="menu-item"><a href="/" class="menu-link">Home</a></li>
-          <li class="menu-item"><a href="/#my-services" class="menu-link">My Services</a></li>
-          <li class="menu-item"><a href="/#about-me" class="menu-link">About Me</a></li>
-          <li class="menu-item"><a href="/#my-work" class="menu-link">My Work</a></li>
-          <li class="menu-item"><a href="/#contact-me" class="menu-link">Contact Me</a></li>
+    <!-- navbar -->
+    <button class="navbar-toggle">
+      <div class="hamburger"></div>
+    </button>
+    <nav class="navbar">
+     <div class="navbar-brand">Vitali Melamed</div>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
+          <li class="navbar-item"><a href="/#skills" class="navbar-link">Skills</a></li>
+          <li class="navbar-item"><a href="/#about" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="/#portfolio" class="navbar-link">Portfolio</a></li>
+          <li class="navbar-item"><a href="/#contact" class="navbar-link">Contact</a></li>
         </ul>
     </nav>
-    <!-- / menu -->
-    <!-- project -->
-    <div class="project-item-individual">
-      <h1>TechPost</h1>
+    <!-- / navbar -->
+    <main class="main-content">
+    <!-- project item -->
+    <section class="project-container">
+      <h1 class="project-heading">TechPost</h1>
       <img
-        src="img/techpost.jpg"
+        src="img/techpost.png"
+        alt=""
+        class="project-img"
       />
-      <p>
+      <p class="project-content">
         Blog website demonstrating CSS grid layout. The project incorporates HTML,
         CSS & JavaScript skills. The project consists of landing
         page, about page and article page.
       </p>
-      <p>
+      <p class="project-content">
         The project incorporates a font icon library named Font Awesome for items such
         as arrow icons, social icons, etc.
       </p>
-      <p>
+      <p class="project-content">
         For example on the landing page the cards use grid layout. The project is
         mobile responsive using media queries. The layout adapts to different screen sizes.
       </p>
-      <div class="group-one">
+      <div class="project-links">
+        <div class="mb-1">
         <a
           href="https://techpost.netlify.app"
           target="_blank"
-          class="link mr"
+          class="mr-1 portfolio-link"
           >Live demo</a>
         <a
           href="https://github.com/vitalimelamed/techpost"
           target="_blank"
-          class="link"
+          class="portfolio-link"
           >View code</a>
         </div>
-        <div class="group-two">
-          <a href="/skylounge.html" class="link mr"
+        <div>
+          <a href="/skylounge.html" class="mr-1 portfolio-link"
             >Previous project</a
           >
-          <a href="/digilab.html" class="link"
+          <a href="/digilab.html" class="portfolio-link"
             >Next project</a>
         </div>
-    </div>
-    <!-- / project -->
+      </div>
+    </section>
+    <!-- / project item -->
+  </main>
     <!-- footer -->
     <footer class="footer">
       <ul class="social-list">
         <li class="social-item">
           <a
-            class="social-link"
             href="https://github.com/vitalimelamed"
             target="_blank"
+            class="mr-1 social-link"
           >GitHub
           </a>
         </li>
         <li class="social-item">
           <a
-            class="social-link"
             href="https://www.linkedin.com/in/vitalimelamed"
             target="_blank"
+            class="mr-1 social-link"
           >LinkedIn
           </a>
         </li>
         <li class="social-item">
           <a
-            class="social-link"
             href="https://twitter.com/vitalimelamed"
             target="_blank"
+            class="mr-1 social-link"
           >Twitter
           </a>
         </li>
         <li class="social-item">
           <a
-            class="social-link"
             href="https://www.facebook.com/vitalimelamed"
             target="_blank"
+            class="social-link"
           >Facebook
           </a>
         </li>
@@ -123,9 +130,10 @@
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
         </script>
+        All Rights Reserved
       </p>
     </footer>
     <!-- / footer -->
-     <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
