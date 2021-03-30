@@ -11,7 +11,7 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Work | Vitali Melamed</title>
+    <title>Vitali Melamed Portfolio</title>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -28,90 +28,98 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <!-- menu -->
-    <button class="menu-toggle" aria-label="menu toggle">
-      <span class="bar"></span>
-  </button>
-    <nav class="menu">
-        <ul class="menu-list">
-            <li class="menu-item"><a href="/" class="menu-link">Home</a></li>
-            <li class="menu-item"><a href="/#my-services" class="menu-link">My Services</a></li>
-            <li class="menu-item"><a href="/#about-me" class="menu-link">About Me</a></li>
-            <li class="menu-item"><a href="/#my-work" class="menu-link">My Work</a></li>
-            <li class="menu-item"><a href="/#contact-me" class="menu-link">Contact Me</a></li>
+    <!-- navbar -->
+    <button class="navbar-toggle">
+      <div class="hamburger"></div>
+    </button>
+    <nav class="navbar">
+     <div class="navbar-brand">Vitali Melamed</div>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
+          <li class="navbar-item"><a href="/#skills" class="navbar-link">Skills</a></li>
+          <li class="navbar-item"><a href="/#about" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="/#portfolio" class="navbar-link">Portfolio</a></li>
+          <li class="navbar-item"><a href="/#contact" class="navbar-link">Contact</a></li>
         </ul>
     </nav>
-    <!-- / menu -->
-    <!-- project -->
-    <div class="project-item-individual">
-      <h1>DigiLab</h1>
+    <!-- / navbar -->
+    <main class="main-content">
+    <!-- project item -->
+    <section class="project-container">
+      <h1 class="project-heading">DigiLab</h1>
       <img
-        src="img/digilab.jpg"
+        src="img/digilab.png"
+        alt=""
+        class="project-img"
       />
-      <p>
+      <p class="project-content">
         Store website built with Bootstrap CSS front-end framework. The project showcasing HTML,
         CSS skills. The project consists of a landing page.
       </p>
-      <p>
+      <p class="project-content">
         The project uses a font icon library called Font Awesome for items such
         as our goals section icons and social media icons.
       </p>
-      <p>
+      <p class="project-content">
         The project incorporates jumbotron component at the top of the landing page. The project incorporates mobile responsive layout using media queries.
       </p>
-      <div class="group-one">
+      <div class="project-links">
+        <div class="mb-1">
         <a
           href="https://digilab.netlify.app"
           target="_blank"
-          class="link mr"
+          class="mr-1 portfolio-link"
           >Live demo</a>
         <a
           href="https://github.com/vitalimelamed/digilab"
           target="_blank"
-          class="link"
+          class="portfolio-link"
           >View code</a>
-      </div>
-        <div class="group-two">
-          <a href="/techpost.html" class="link mr"
+        </div>
+        <div>
+          <a href="/techpost.html"
+          class="mr-1 portfolio-link"
             >Previous project</a
           >
-          <a href="/burgerlab.html" class="link"
+          <a href="/burgerlab.html" class="portfolio-link"
             >Next project</a>
         </div>
     </div>
-    <!-- / project -->
+    </section>
+    <!-- / project item -->
+  </main>
     <!-- footer -->
     <footer class="footer">
       <ul class="social-list">
         <li class="social-item">
           <a
-            class="social-link"
             href="https://github.com/vitalimelamed"
             target="_blank"
+            class="mr-1 social-link"
           >GitHub
           </a>
         </li>
         <li class="social-item">
           <a
-            class="social-link"
             href="https://www.linkedin.com/in/vitalimelamed"
             target="_blank"
+            class="mr-1 social-link"
           >LinkedIn  
           </a>
         </li>
         <li class="social-item">
           <a
-            class="social-link"
             href="https://twitter.com/vitalimelamed"
             target="_blank"
+            class="mr-1 social-link"
           >Twitter 
           </a>
         </li>
         <li class="social-item">
           <a
-            class="social-link"
             href="https://www.facebook.com/vitalimelamed"
             target="_blank"
+            class="social-link"
           >Facebook
           </a>
         </li>
@@ -121,9 +129,10 @@
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
         </script>
+        All Rights Reserved
       </p>
     </footer>
     <!-- / footer -->
-     <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
