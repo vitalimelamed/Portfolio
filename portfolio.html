@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- global site tag (gtag.js) - google analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPFKGQ4L52"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EPFKGQ4L52');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitali Melamed Portfolio</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#f9f9f9" />
+    <meta name="theme-color" content="#f9f9f9" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+     <!-- normalize -->
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <button class="navbar-toggle">
+      <div class="hamburger"></div>
+    </button>
+    <nav class="navbar">
+     <div class="navbar-brand">Vitali Melamed</div>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
+          <li class="navbar-item"><a href="/#skills" class="navbar-link">Skills</a></li>
+          <li class="navbar-item"><a href="/#about" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="/#portfolio" class="navbar-link">Portfolio</a></li>
+          <li class="navbar-item"><a href="/#contact" class="navbar-link">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- / navbar -->
+    <main class="main-content">
+    <!-- project item -->
+    <section class="project-container">
+      <h1 class="project-heading">Portfolio</h1>
+      <img
+        src="img/portfolio.png"
+        alt=""
+        class="project-img"
+      />
+      <p class="project-content">
+        Personal portfolio showcasing my work. The website is made without no CSS framework and JS framework. I demonstrate how to use modern CSS layout components CSS flexbox and CSS grid.
+      </p>
+      <p class="project-content">
+        I demonstrate how the responsive navbar menu is made with plain vanilla JavaScript. The website is made with media queries to demonstrate the responsive mobile layout. The form is using a third party API.
+      </p>
+      <div class="project-links">
+        <div class="mb-1">
+        <a
+          href="https://github.com/vitalimelamed/portfolio"
+          target="_blank"
+          class="portfolio-link"
+          >View code</a>
+        </div>
+          <div>
+          <a href="/burgerlab.html" class="portfolio-link"
+            >Previous project</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- / project item -->
+  </main>
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="social-list">
+        <li class="social-item">
+          <a
+            href="https://github.com/vitalimelamed"
+            target="_blank"
+            class="mr-1 social-link"
+          >GitHub
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.linkedin.com/in/vitalimelamed"
+            target="_blank"
+            class="mr-1 social-link"
+          >LinkedIn
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://twitter.com/vitalimelamed"
+            target="_blank"
+            class="mr-1 social-link"
+          >Twitter
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.facebook.com/vitalimelamed"
+            target="_blank"
+            class="social-link"
+          >Facebook
+          </a>
+        </li>
+      </ul>
+      <p class="footer-text">
+        &copy;
+        <script>
+          new Date().getFullYear() && document.write(+new Date().getFullYear());
+        </script>
+        All Rights Reserved
+      </p>
+    </footer>
+    <!-- / footer -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
