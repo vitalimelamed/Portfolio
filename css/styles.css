@@ -137,8 +137,8 @@ h3 {
       flex-direction: column;
   }
   .navbar-link {
-      padding: 0.5rem 1rem;
-  }
+    padding: 0.5rem 1rem;
+}
   .navbar-list.navbar-open {
       max-height: 50vh;
       opacity: 1;
