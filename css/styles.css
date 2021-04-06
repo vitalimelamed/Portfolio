@@ -127,11 +127,9 @@ h3 {
 @media (max-width: 768px) {
   .navbar-toggle {
     position: fixed;
-    top: 12px;
+    top: 15px;
     right: 10px;
-    font-size: 30px;
     border: none;
-    outline: none;
     margin: 0;
     padding: 0;
     background-color: none;
