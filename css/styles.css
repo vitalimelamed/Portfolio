@@ -139,6 +139,9 @@ h3 {
     cursor: pointer;
     z-index: 1;
   }
+  .navbar-toggle:focus {
+    outline: none;
+  }
   .navbar-brand {
     margin: 0;
   }
@@ -157,7 +160,7 @@ h3 {
   }
   .navbar-link {
     margin: 0;
-    padding: 0.5rem 0 0.8rem 1rem;
+    padding: 0.5rem 0 1rem 1rem;
 }
   .navbar-list.show {
     max-height: 100vh;
