@@ -134,13 +134,10 @@ h3 {
     outline: none;
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    background-color: none;
     color: var(--light-color);
     cursor: pointer;
     z-index: 1;
-  }
-  .navbar-toggle:focus {
-    outline: none;
   }
   .navbar-brand {
     margin: 0;
