@@ -173,20 +173,20 @@
       <div class="form-wrapper">
         <!-- form -->
         <div class="form">
-        <form action="https://kwes.io/api/foreign/forms/5QCcZaVEnauVitWHSJIv" class="kwes-form">
+        <form mode="test" class="kwes-form" action="https://kwes.io/api/foreign/forms/5QCcZaVEnauVitWHSJIv">
             <!-- form group -->
             <div class="form-group">
-                <input type="text" name="name" data-kw-rules="required|max:20" placeholder="Name" class="form-input">
+                <input data-kw-rules="required|min:5|max:20" class="form-input" type="text" name="name" placeholder="Name">
               </div>
             <!-- form group -->
             <div class="form-group">
-                <input type="email" name="email" data-kw-rules="required|email" placeholder="Email" class="form-input">
+                <input data-kw-rules="required|email" class="form-input" type="email" name="email" placeholder="Email">
               </div>
             <!-- form group -->
             <div class="form-group">
-              <textarea name="message" data-kw-rules="required|max:255" placeholder="Message" class="form-input form-textarea"></textarea>
+              <textarea data-kw-rules="required|min:20|max:255" class="form-input form-textarea" name="message" placeholder="Message"></textarea>
             </div>
-          <button type="submit" class="form-button">Send message</button>
+          <button class="form-button" type="submit">Send message</button>
         </form>
       </div>
         <!-- / form -->
