@@ -26,11 +26,11 @@
   <body>
     <!-- navbar -->
     <div class="navbar-toggle">
-      <i class="bi bi-list"></i>
+      <div class="hamburger"></div>
     </div>
     <nav class="navbar">
-      <div class="navbar-brand">Vitali Melamed</div>
-        <ul class="navbar-list">
+      <a href="#" class="navbar-brand">Vitali Melamed</a>
+        <ul id="navbar-menu" class="navbar-list">
           <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
           <li class="navbar-item"><a href="#skills" class="navbar-link">Skills</a></li>
           <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
@@ -63,6 +63,7 @@
         <!-- skill 1 -->
         <div class="skill">
           <h3 class="skill-heading">Development</h3>
+          <i class="bi bi-code-square icon"></i>
           <p class="skill-text">
             Build website using HTML, CSS and JavaScript. Specialise in CSS
             front-end frameworks.
@@ -72,6 +73,7 @@
         <!-- skill 2 -->
         <div class="skill">
           <h3 class="skill-heading">WordPress</h3>
+          <i class="bi bi-file-word icon"></i>
           <p class="skill-text">
             Build website using WordPress. Can be customised by request.
           </p>
@@ -80,6 +82,7 @@
         <!-- skill 3 -->
         <div class="skill">
           <h3 class="skill-heading">Design</h3>
+          <i class="bi bi-display icon"></i>
           <p class="skill-text">Design a mockup of UI/UX for a website.
           </p>
         </div>
@@ -122,7 +125,7 @@
           />
           <h3 class="portfolio-heading">SkyLounge</h3>
           <p class="portfolio-text">Hotel website built with CSS flexbox</p>
-          <a href="/skylounge.html" class="portfolio-link">Project <i class="bi bi-arrow-right"></i></a>
+          <a href="/skylounge.html" class="portfolio-link">View project <i class="bi bi-arrow-right"></i></a>
         </div>
         <!-- / portfolio 1 -->
         <!-- portfolio 2 -->
@@ -134,7 +137,7 @@
           />
           <h3 class="portfolio-heading">TechPost</h3>
           <p class="portfolio-text">Blog website built with CSS grid</p>
-          <a href="/techpost.html" class="portfolio-link">Project <i class="bi bi-arrow-right"></i></a>
+          <a href="/techpost.html" class="portfolio-link">View project <i class="bi bi-arrow-right"></i></a>
         </div>
         <!-- / portfolio 2 -->
         <!-- portfolio 3 -->
@@ -146,7 +149,7 @@
           />
           <h3 class="portfolio-heading">DigiLab</h3>
           <p class="portfolio-text">Store website built with Bootstrap</p>
-          <a href="/digilab.html" class="portfolio-link">Project <i class="bi bi-arrow-right"></i></a>
+          <a href="/digilab.html" class="portfolio-link">View project <i class="bi bi-arrow-right"></i></a>
         </div>
         <!-- / portfolio 3 -->
         <!-- portfolio 4 -->
@@ -158,7 +161,7 @@
           />
           <h3 class="portfolio-heading">BurgerLab</h3>
           <p class="portfolio-text">Restaurant website built with Bootstrap</p>
-          <a href="/burgerlab.html" class="portfolio-link">Project <i class="bi bi-arrow-right"></i></a>
+          <a href="/burgerlab.html" class="portfolio-link">View project <i class="bi bi-arrow-right"></i></a>
         </div>
         <!-- / portfolio 4 -->
       </div>
@@ -170,7 +173,7 @@
       <div class="form-wrapper">
         <!-- form -->
         <div class="form">
-        <form action="https://kwes.io/api/foreign/forms/40N5TtWI4rS1rXiD8rAT" class="kwes-form">
+        <form action="https://kwes.io/api/foreign/forms/5QCcZaVEnauVitWHSJIv" class="kwes-form">
             <!-- form group -->
             <div class="form-group">
                 <input type="text" name="name" data-kw-rules="required|max:20" placeholder="Name" class="form-input">
@@ -183,7 +186,7 @@
             <div class="form-group">
               <textarea name="message" data-kw-rules="required|max:255" placeholder="Message" class="form-input form-textarea"></textarea>
             </div>
-          <button type="submit" class="form-btn">Send message</button>
+          <button type="submit" class="form-button">Send message</button>
         </form>
       </div>
         <!-- / form -->
@@ -233,7 +236,6 @@
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
         </script>
-        
       </p>
     </footer>
     <!-- / footer -->
