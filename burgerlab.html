@@ -25,11 +25,11 @@
   </head>
   <body>
     <!-- navbar -->
-    <button class="navbar-toggle">
-      <i class="bi bi-list"></i>
-    </button>
+    <div class="navbar-toggle">
+      <div class="hamburger"></div>
+    </div>
     <nav class="navbar">
-     <div class="navbar-brand">Vitali Melamed</div>
+      <a href="/" class="navbar-brand">Vitali Melamed</a>
         <ul class="navbar-list">
           <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
           <li class="navbar-item"><a href="/#skills" class="navbar-link">Skills</a></li>
@@ -61,16 +61,16 @@
           href="https://burgerlab.netlify.app"
           target="_blank"
           class="mr-1 portfolio-link"
-          >Live demo</a>
+          >Live demo <i class="bi bi-arrow-up-right"></i></a>
         <a
           href="https://github.com/vitalimelamed/burgerlab"
           target="_blank"
           class="portfolio-link"
-          >View code</a>
+          >View code <i class="bi bi-arrow-up-right"></i></a>
         </div>
           <div>
           <a href="/digilab.html" class="mr-1 portfolio-link"
-            ><i class="bi bi-arrow-left"></i> Project</a
+            ><i class="bi bi-arrow-left"></i> Prev project</a
           >
         </div>
       </div>
@@ -118,7 +118,6 @@
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
         </script>
-        
       </p>
     </footer>
     <!-- / footer -->
