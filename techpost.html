@@ -25,11 +25,11 @@
   </head>
   <body>
     <!-- navbar -->
-    <button class="navbar-toggle">
-      <i class="bi bi-list"></i>
-    </button>
+    <div class="navbar-toggle">
+      <div class="hamburger"></div>
+    </div>
     <nav class="navbar">
-     <div class="navbar-brand">Vitali Melamed</div>
+      <a href="/" class="navbar-brand">Vitali Melamed</a>
         <ul class="navbar-list">
           <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
           <li class="navbar-item"><a href="/#skills" class="navbar-link">Skills</a></li>
@@ -54,7 +54,7 @@
         page, about page and article page.
       </p>
       <p class="project-content">
-        The project incorporates a font icon library named Font Awesome for items such
+        The project incorporates a font icon library named Bootstrap Icons for items such
         as arrow icons, social icons, etc.
       </p>
       <p class="project-content">
@@ -67,19 +67,19 @@
           href="https://techpost.netlify.app"
           target="_blank"
           class="mr-1 portfolio-link"
-          >Live demo</a>
+          >Live demo <i class="bi bi-arrow-up-right"></i></a>
         <a
           href="https://github.com/vitalimelamed/techpost"
           target="_blank"
           class="portfolio-link"
-          >View code</a>
+          >View code <i class="bi bi-arrow-up-right"></i></a>
         </div>
         <div>
           <a href="/skylounge.html" class="mr-1 portfolio-link"
-            ><i class="bi bi-arrow-left"></i> Project</a
+            ><i class="bi bi-arrow-left"></i> Prev project</a
           >
           <a href="/digilab.html" class="portfolio-link"
-            >Project <i class="bi bi-arrow-right"></i></a>
+            >Next project <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
     </section>
@@ -126,7 +126,6 @@
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
         </script>
-        
       </p>
     </footer>
     <!-- / footer -->
