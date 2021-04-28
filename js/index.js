@@ -1,13 +1,15 @@
-var navbarToggle = document.querySelector('.navbar-toggle');
-var navbarMenu = document.querySelector('.navbar-list');
-var navbarLink = document.querySelectorAll('.navbar-link');
-  navbarToggle.addEventListener('click', function() {
-    navbarToggle.classList.toggle('hamburger-rotate');
-    navbarMenu.classList.toggle('menu-show');
+const navbarToggle = document.querySelector('.navbar-toggle');
+const navbarList = document.querySelector('.navbar-list');
+const navbarLink = document.querySelectorAll('.navbar-brand, .navbar-link');
+
+  navbarToggle.addEventListener('click', () => {
+    navbarToggle.classList.toggle('navbar-open');
+    navbarList.classList.toggle('navbar-show');
 });
-  navbarLink.forEach( function(link) {
-    link.addEventListener('click', function() {
-      navbarToggle.classList.remove('hamburger-rotate');
-      navbarMenu.classList.remove('menu-show');
+
+  navbarLink.forEach( (navbarLink) => {
+    navbarLink.addEventListener('click', () => {
+      navbarToggle.classList.remove('navbar-open');
+      navbarList.classList.remove('navbar-show');
   });
 });
