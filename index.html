@@ -24,34 +24,36 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <!-- navbar -->
-    <div class="navbar-toggle">
-      <div class="hamburger"></div>
+    <header>
+       <!-- navbar -->
+    <div class="navbar-toggle" aria-label="Navbar toggle">
+      <span class="hamburger"></span>
     </div>
     <nav class="navbar">
       <a href="#" class="navbar-brand">Vitali Melamed</a>
-        <ul id="navbar-menu" class="navbar-list">
+        <ul class="navbar-list">
           <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
           <li class="navbar-item"><a href="#skills" class="navbar-link">Skills</a></li>
           <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
-          <li class="navbar-item"><a href="#portfolio" class="navbar-link">Portfolio</a></li>
+          <li class="navbar-item"><a href="#projects" class="navbar-link">Projects</a></li>
           <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
         </ul>
     </nav>
     <!-- / navbar -->
-    <main class="main-content">
+  </header>
+  <main class="main-content">
     <!-- introduction -->
     <div class="container">
-    <section class="introduction" id="introduction">
+    <section class="introduction">
       <h1 class="section-title section-title-introduction">
-        Hi, I am <strong class="fw-bold">Vitali Melamed</strong>
+        Hi, I am <strong>Vitali Melamed</strong>
       </h1>
       <p class="section-subtitle section-subtitle-introduction">
         I build amazing web experiences
       </p>
       <img
-        src="img/introduction-profile.jpg"
-        alt=""
+        src="img/Vitali-Melamed.jpg"
+        alt="Web developer Vitali Melamed"
         class="introduction-img"
       />
     </section>
@@ -63,18 +65,18 @@
         <!-- skill 1 -->
         <div class="skill">
           <h3 class="skill-heading">Development</h3>
-          <i class="bi bi-code-square icon"></i>
-          <p class="skill-text">
+          <i class="bi bi-code-square skill-icon"></i>
+          <p>
             Build website using HTML, CSS and JavaScript. Specialise in CSS
-            front-end frameworks.
+            front end frameworks.
           </p>
         </div>
         <!-- / skill 1 -->
         <!-- skill 2 -->
         <div class="skill">
           <h3 class="skill-heading">WordPress</h3>
-          <i class="bi bi-file-word icon"></i>
-          <p class="skill-text">
+          <i class="bi bi-file-word skill-icon"></i>
+          <p>
             Build website using WordPress. Can be customised by request.
           </p>
         </div>
@@ -82,119 +84,128 @@
         <!-- skill 3 -->
         <div class="skill">
           <h3 class="skill-heading">Design</h3>
-          <i class="bi bi-display icon"></i>
-          <p class="skill-text">Design a mockup of UI/UX for a website.
+          <i class="bi bi-display skill-icon"></i>
+          <p>Design a mockup of UI/UX for a website.
           </p>
         </div>
         <!-- / skill 3 -->
       </div>
+      <div class="cta">
+      <a href="#projects" class="btn" aria-label="Projects button">My projects</a>
+    </div>
     </section>
     <!-- / skills -->
     <!-- about -->
-    <section class="about" id="about">
+    <section id="about" class="about">
       <h2 class="section-title-about">About</h2>
       <p class="section-subtitle-about">
-        Front-end web developer based in Melbourne, Australia
+        Front end web developer based in Melbourne, Australia
       </p>
-        <p class="about-text">
-          Hello I am Vitali Melamed. I am a front-end web developer based in
-          Melbourne, AU. I like coding with a passion. I specialise in
-          front-end web dev working with HTML, CSS with some
-          exposure to the back-end as well. Technologies and frameworks I have
+        <p class="about-content">
+          Hi I am Vitali Melamed. I am a front end web developer based in
+          Melbourne, Australia. I like coding with a passion. I specialise in
+          front end web development working with HTML, CSS with some
+          exposure to the back end as well. Technologies and frameworks I have
           exposure to include Node, React, Vue, Bootstrap and WordPress just to
           name a few. Programming languages I work with include JavaScript &
           PHP.
         </p>
       <img
-        src="img/imac-showing-code.jpg"
-        alt=""
+        src="img/Computer-on-desk.jpg"
+        alt="Computer on desk"
         class="about-img"
       />
     </section>
     <!-- / about -->
-    <!-- portfolio -->
-    <section id="portfolio">
-      <h2 class="section-title">Portfolio</h2>
-      <div class="portfolio">
-        <!-- portfolio 1 -->
-        <div  class="portfolio-item">
+    <!-- projects -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects">
+        <!-- project 1 -->
+        <div  class="project-item">
           <img
-            src="img/skylounge.png"
-            alt=""
-            class="portfolio-img"
+            src="img/Skylounge-project.png"
+            alt="Skylounge project mockup"
+            class="project-img"
           />
-          <h3 class="portfolio-heading">SkyLounge</h3>
-          <p class="portfolio-text">Hotel website built with CSS flexbox</p>
-          <a href="/skylounge.html" class="portfolio-link">View project <i class="bi bi-arrow-right"></i></a>
+          <h3 class="project-heading">Skylounge</h3>
+          <p>Hotel website built with CSS flexbox</p>
+          <a href="/skylounge-project.html" class="project-right-link">View project <i class="bi bi-arrow-right"></i></a>
         </div>
-        <!-- / portfolio 1 -->
-        <!-- portfolio 2 -->
-        <div class="portfolio-item">
+        <!-- / project 1 -->
+        <!-- project 2 -->
+        <div class="project-item">
           <img
-            src="img/techpost.png"
-            alt=""
-            class="portfolio-img"
+            src="img/Techpost-project.png"
+            alt="Techpost project mockup"
+            class="project-img"
           />
-          <h3 class="portfolio-heading">TechPost</h3>
-          <p class="portfolio-text">Blog website built with CSS grid</p>
-          <a href="/techpost.html" class="portfolio-link">View project <i class="bi bi-arrow-right"></i></a>
+          <h3 class="project-heading">Techpost</h3>
+          <p>Blog website built with CSS grid</p>
+          <a href="/techpost-project.html" class="project-right-link">View project <i class="bi bi-arrow-right"></i></a>
         </div>
-        <!-- / portfolio 2 -->
-        <!-- portfolio 3 -->
-          <div class="portfolio-item">
+        <!-- / project 2 -->
+        <!-- project 3 -->
+          <div class="project-item">
           <img
-            src="img/digilab.png"
-            alt=""
-            class="portfolio-img"
+            src="img/Digilab-project.png"
+            alt="Digilab project mockup"
+            class="project-img"
           />
-          <h3 class="portfolio-heading">DigiLab</h3>
-          <p class="portfolio-text">Store website built with Bootstrap</p>
-          <a href="/digilab.html" class="portfolio-link">View project <i class="bi bi-arrow-right"></i></a>
+          <h3 class="project-heading">Digilab</h3>
+          <p>Store website built with Bootstrap</p>
+          <a href="/digilab-project.html" class="project-right-link">View project <i class="bi bi-arrow-right"></i></a>
         </div>
-        <!-- / portfolio 3 -->
-        <!-- portfolio 4 -->
-        <div class="portfolio-item">
+        <!-- / project 3 -->
+        <!-- project 4 -->
+        <div class="project-item">
           <img
-            src="img/burgerlab.png"
-            alt=""
-            class="portfolio-img"
+            src="img/Burgerlab-project.png"
+            alt="Burgerlab project mockup"
+            class="project-img"
           />
-          <h3 class="portfolio-heading">BurgerLab</h3>
-          <p class="portfolio-text">Restaurant website built with Bootstrap</p>
-          <a href="/burgerlab.html" class="portfolio-link">View project <i class="bi bi-arrow-right"></i></a>
+          <h3 class="project-heading">Burgerlab</h3>
+          <p>Restaurant website built with Bootstrap</p>
+          <a href="/burgerlab-project.html" class="project-right-link">View project <i class="bi bi-arrow-right"></i></a>
         </div>
-        <!-- / portfolio 4 -->
+        <!-- / project 4 -->
       </div>
     </section>
-    <!-- / portfolio -->
+    <!-- / projects -->
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" class="contact">
       <h2 class="section-title">Contact</h2>
       <div class="form-wrapper">
         <!-- form -->
         <div class="form">
         <form class="kwes-form" action="https://kwes.io/api/foreign/forms/5QCcZaVEnauVitWHSJIv">
-            <!-- form group -->
+            <!-- form group name -->
             <div class="form-group">
-                <input data-kw-rules="required|min:5|max:20" class="form-input" type="text" name="name" placeholder="Name">
+                <label for="name">Name</label>
+                <input data-kw-rules="required|min:5|max:20" class="form-input" type="text" name="name" id="name" aria-label="name input field">
               </div>
-            <!-- form group -->
+            <!-- form group email -->
             <div class="form-group">
-                <input data-kw-rules="required|email" class="form-input" type="email" name="email" placeholder="Email">
+                <label for="email">Email</label>
+                <input data-kw-rules="required|email" class="form-input" type="email" name="email" id="email" aria-label="email input field">
               </div>
-            <!-- form group -->
+            <!-- form group message -->
             <div class="form-group">
-              <textarea data-kw-rules="required|min:20|max:255" class="form-input form-textarea" name="message" placeholder="Message"></textarea>
+              <label for="message">Message</label>
+              <textarea data-kw-rules="required|min:20|max:255" class="form-input" name="message" id="message" aria-label="message textarea field" rows="7"></textarea>
             </div>
-          <button class="form-button" type="submit">Send message</button>
+            <!-- form button submit -->
+          <button class="form-btn" type="submit">Send message</button>
         </form>
       </div>
         <!-- / form -->
         </div>
+        <a href="#" class="btn-top" aria-label="Top button"><i class="bi bi-arrow-up"></i></a>
     </section>
   </div>
 </main>
     <!-- / contact -->
+    
     <!-- footer -->
     <footer class="footer">
       <ul class="social-list">
@@ -202,7 +213,7 @@
           <a
             href="https://github.com/vitalimelamed"
             target="_blank"
-            class="mr-1 social-link"
+            class="social-link mr-1"
           ><i class="bi bi-github"></i>
           </a>
         </li>
@@ -210,7 +221,7 @@
           <a
             href="https://www.linkedin.com/in/vitalimelamed"
             target="_blank"
-            class="mr-1 social-link"
+            class="social-link mr-1"
           ><i class="bi bi-linkedin"></i>
           </a>
         </li>
@@ -218,7 +229,7 @@
           <a
             href="https://twitter.com/vitalimelamed"
             target="_blank"
-            class="mr-1 social-link"
+            class="social-link mr-1"
           ><i class="bi bi-twitter"></i>
           </a>
         </li>
@@ -231,11 +242,12 @@
           </a>
         </li>
       </ul>
-      <p class="footer-text">
+      <p class="footer-content">
         &copy;
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
         </script>
+        &mdash; All rights reserved
       </p>
     </footer>
     <!-- / footer -->
