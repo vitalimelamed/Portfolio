@@ -26,9 +26,9 @@
   <body>
     <header>
        <!-- navbar -->
-    <div class="navbar-toggle" aria-label="Navbar toggle">
-      <span class="hamburger"></span>
-    </div>
+       <button class="navbar-toggle" type="button" aria-label="navbar toggle">
+        <span class="hamburger"></span>
+      </button>
     <nav class="navbar">
       <a href="#" class="navbar-brand">Vitali Melamed</a>
         <ul class="navbar-list">
@@ -48,14 +48,16 @@
       <h1 class="section-title section-title-introduction">
         Hi, I am <strong>Vitali Melamed</strong>
       </h1>
+      
       <p class="section-subtitle section-subtitle-introduction">
         I build amazing web experiences
       </p>
-      <img
-        src="img/Vitali-Melamed.jpg"
-        alt="Web developer Vitali Melamed"
-        class="introduction-img"
-      />
+    
+          <img
+          src="img/Vitali-Melamed.jpg"
+          alt="Web developer Vitali Melamed"
+          class="introduction-img"
+        />
     </section>
     <!-- / introduction -->
     <!-- skills -->
@@ -65,8 +67,8 @@
         <!-- skill 1 -->
         <div class="skill">
           <h3 class="skill-heading">Development</h3>
-          <i class="bi bi-code-square skill-icon"></i>
-          <p>
+          <i class="bi bi-code skill-icon"></i>
+          <p class="skill-text">
             Build website using HTML, CSS and JavaScript. Specialise in CSS
             front end frameworks.
           </p>
@@ -75,8 +77,8 @@
         <!-- skill 2 -->
         <div class="skill">
           <h3 class="skill-heading">WordPress</h3>
-          <i class="bi bi-file-word skill-icon"></i>
-          <p>
+          <i class="bi bi-laptop skill-icon"></i>
+          <p class="skill-text">
             Build website using WordPress. Can be customised by request.
           </p>
         </div>
@@ -84,14 +86,14 @@
         <!-- skill 3 -->
         <div class="skill">
           <h3 class="skill-heading">Design</h3>
-          <i class="bi bi-display skill-icon"></i>
-          <p>Design a mockup of UI/UX for a website.
+          <i class="bi bi-pencil skill-icon"></i>
+          <p class="skill-text">Design a mockup of UI/UX for a website.
           </p>
         </div>
         <!-- / skill 3 -->
       </div>
       <div class="cta">
-      <a href="#projects" class="btn" aria-label="Projects button">My projects</a>
+      <a class="btn" href="#projects">My projects</a>
     </div>
     </section>
     <!-- / skills -->
@@ -107,7 +109,7 @@
           front end web development working with HTML, CSS with some
           exposure to the back end as well. Technologies and frameworks I have
           exposure to include Node, React, Vue, Bootstrap and WordPress just to
-          name a few. Programming languages I work with include JavaScript &
+          name a few. Programming languages I work with include JavaScript and
           PHP.
         </p>
       <img
@@ -129,8 +131,8 @@
             class="project-img"
           />
           <h3 class="project-heading">Skylounge</h3>
-          <p>Hotel website built with CSS flexbox</p>
-          <a href="/skylounge-project.html" class="project-right-link">View project <i class="bi bi-arrow-right"></i></a>
+          <p class="project-text">Portfolio side project using CSS flexbox</p>
+         <a class="project-link" href="skylounge-project.html">View project <i class="bi bi-arrow-right"></i></a>
         </div>
         <!-- / project 1 -->
         <!-- project 2 -->
@@ -141,8 +143,8 @@
             class="project-img"
           />
           <h3 class="project-heading">Techpost</h3>
-          <p>Blog website built with CSS grid</p>
-          <a href="/techpost-project.html" class="project-right-link">View project <i class="bi bi-arrow-right"></i></a>
+          <p class="project-text">Portfolio side project using CSS grid</p>
+          <a class="project-link" href="techpost-project.html">View project <i class="bi bi-arrow-right"></i></a>
         </div>
         <!-- / project 2 -->
         <!-- project 3 -->
@@ -153,8 +155,8 @@
             class="project-img"
           />
           <h3 class="project-heading">Digilab</h3>
-          <p>Store website built with Bootstrap</p>
-          <a href="/digilab-project.html" class="project-right-link">View project <i class="bi bi-arrow-right"></i></a>
+          <p class="project-text">Portfolio side project using Bootstrap CSS</p>
+          <a class="project-link" href="digilab-project.html">View project <i class="bi bi-arrow-right"></i></a>
         </div>
         <!-- / project 3 -->
         <!-- project 4 -->
@@ -165,15 +167,15 @@
             class="project-img"
           />
           <h3 class="project-heading">Burgerlab</h3>
-          <p>Restaurant website built with Bootstrap</p>
-          <a href="/burgerlab-project.html" class="project-right-link">View project <i class="bi bi-arrow-right"></i></a>
+          <p class="project-text">Portfolio side project using Materialize CSS</p>
+          <a class="project-link" href="burgerlab-project.html">View project <i class="bi bi-arrow-right"></i></a>
         </div>
         <!-- / project 4 -->
       </div>
     </section>
     <!-- / projects -->
     <!-- contact -->
-    <section id="contact" class="contact">
+    <section id="contact">
       <h2 class="section-title">Contact</h2>
       <div class="form-wrapper">
         <!-- form -->
@@ -181,18 +183,18 @@
         <form class="kwes-form" action="https://kwes.io/api/foreign/forms/5QCcZaVEnauVitWHSJIv">
             <!-- form group name -->
             <div class="form-group">
-                <label for="name">Name</label>
-                <input data-kw-rules="required|min:5|max:20" class="form-input" type="text" name="name" id="name" aria-label="name input field">
+              <label for="name">Name</label>
+                <input data-kw-rules="required|min:5|max:20" class="form-input" type="text" name="name" id="name" aria-label="name">
               </div>
             <!-- form group email -->
             <div class="form-group">
                 <label for="email">Email</label>
-                <input data-kw-rules="required|email" class="form-input" type="email" name="email" id="email" aria-label="email input field">
+                <input data-kw-rules="required|email" class="form-input" type="email" name="email" id="email" aria-label="email">
               </div>
             <!-- form group message -->
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea data-kw-rules="required|min:20|max:255" class="form-input" name="message" id="message" aria-label="message textarea field" rows="7"></textarea>
+              <textarea data-kw-rules="required|min:20|max:255" class="form-input" name="message" id="message" aria-label="message" rows="7"></textarea>
             </div>
             <!-- form button submit -->
           <button class="form-btn" type="submit">Send message</button>
@@ -200,7 +202,6 @@
       </div>
         <!-- / form -->
         </div>
-        <a href="#" class="btn-top" aria-label="Top button"><i class="bi bi-arrow-up"></i></a>
     </section>
   </div>
 </main>
@@ -213,7 +214,7 @@
           <a
             href="https://github.com/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           ><i class="bi bi-github"></i>
           </a>
         </li>
@@ -221,7 +222,7 @@
           <a
             href="https://www.linkedin.com/in/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           ><i class="bi bi-linkedin"></i>
           </a>
         </li>
@@ -229,7 +230,7 @@
           <a
             href="https://twitter.com/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           ><i class="bi bi-twitter"></i>
           </a>
         </li>
@@ -242,7 +243,7 @@
           </a>
         </li>
       </ul>
-      <p class="footer-content">
+      <p class="footer-text">
         &copy;
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
