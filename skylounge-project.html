@@ -10,6 +10,7 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="googlebot" content="noindex" />
     <title>Vitali Melamed Portfolio</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -26,9 +27,9 @@
   <body>
     <header>
      <!-- navbar -->
-     <div class="navbar-toggle" aria-label="Navbar toggle">
+     <button class="navbar-toggle" type="button" aria-label="navbar toggle">
       <span class="hamburger"></span>
-    </div>
+    </button>
      <nav class="navbar">
       <a href="/" class="navbar-brand">Vitali Melamed</a>
          <ul class="navbar-list">
@@ -44,39 +45,39 @@
     <main class="main-content">
       <!-- project -->
       <section class="project-page-container">
-      <h1 class="content-center">Skylounge</h1>
+      <h1 class="text-center">Skylounge</h1>
       <img
         src="img/Skylounge-project.png"
         alt="Skylounge project mockup landing page"
         class="project-page-img"
       />
       <p>
-        Hotel website showcasing CSS flexbox layout. The website is demonstrating HTML, CSS
-        and JavaScript skills. The project consists of landing page and a
+        Portfolio side project showcasing CSS flexbox layout. The website is a demostration of HTML, CSS
+        and JavaScript skills. The project consist of a landing page and a
         separate news page and article page.
       </p>
       <p>
-        The project uses a font icon library called Bootstrap Icons for items such
-        as arrow icons, social icons, etc.
+        The project uses a icon library called Bootstrap Icons for items such
+        as service icons, social icons, etc.
       </p>
       <p>
-        The project incorporates a lightbox image gallery. The project is mobile
+        The project incorporates a lightbox image gallery plugin. The project is mobile
         responsive using media queries.
       </p>
       <div>
-        <div class="content-center">
+        <div class="text-center">
           <a href="https://skylounge.netlify.app"
           target="_blank"
-          class="project-right-link mr-1"
+          class="project-link mr-1"
           >Live demo <i class="bi bi-arrow-up-right"></i></a>
           <a
           href="https://github.com/vitalimelamed/skylounge"
           target="_blank"
-          class="project-right-link"
+          class="project-link"
           >View code <i class="bi bi-arrow-up-right"></i></a>
         </div>
-        <div class="content-center">
-          <a href="/techpost-project.html" class="project-right-link"
+        <div class="text-center">
+          <a href="techpost-project.html" class="project-link"
       >Next project <i class="bi bi-arrow-right"></i></a>
     </div>
     </div>
@@ -90,7 +91,7 @@
           <a
             href="https://github.com/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           ><i class="bi bi-github"></i>
           </a>
         </li>
@@ -98,7 +99,7 @@
           <a
             href="https://www.linkedin.com/in/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           ><i class="bi bi-linkedin"></i>
           </a>
         </li>
@@ -106,7 +107,7 @@
           <a
             href="https://twitter.com/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           ><i class="bi bi-twitter"></i>
           </a>
         </li>
@@ -119,7 +120,7 @@
           </a>
         </li>
       </ul>
-      <p class="footer-content">
+      <p class="footer-text">
         &copy;
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
