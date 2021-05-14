@@ -10,6 +10,7 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="googlebot" content="noindex" />
     <title>Vitali Melamed Portfolio</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -26,9 +27,9 @@
   <body>
     <header>
     <!-- navbar -->
-    <div class="navbar-toggle" aria-label="Navbar toggle">
+    <button class="navbar-toggle" type="button" aria-label="navbar toggle">
       <span class="hamburger"></span>
-    </div>
+    </button>
     <nav class="navbar">
       <a href="/" class="navbar-brand">Vitali Melamed</a>
         <ul class="navbar-list">
@@ -44,43 +45,43 @@
     <main class="main-content">
     <!-- project -->
     <section class="project-page-container">
-      <h1 class="content-center">Techpost</h1>
+      <h1 class="text-center">Techpost</h1>
       <img
         src="img/Techpost-project.png"
         alt="Techpost project mockup landing page"
         class="project-page-img"
       />
       <p>
-        Blog website demonstrating CSS grid layout. The project incorporates HTML,
-        CSS & JavaScript skills. The project consists of landing
+        Portfolio side project demonstrating CSS grid layout. The project incorporates HTML,
+        CSS and JavaScript skills. The project consist of a landing
         page, about page and article page.
       </p>
       <p>
-        The project incorporates a font icon library named Bootstrap Icons for items such
-        as arrow icons, social icons, etc.
+        The project incorporates a icon library named Bootstrap Icons for items such
+        as social icons, arrow icons, etc.
       </p>
       <p>
-        For example on the landing page the cards use grid layout. The project is
+        For example on the landing page the card section uses a grid layout. The project is
         mobile responsive using media queries. The layout adapts to different screen sizes.
       </p>
       <!-- <div> -->
-        <div class="content-center">
+        <div class="text-center">
         <a
           href="https://techpost.netlify.app"
           target="_blank"
-          class="project-right-link mr-1"
+          class="project-link mr-1"
           >Live demo <i class="bi bi-arrow-up-right"></i></a>
         <a
           href="https://github.com/vitalimelamed/techpost"
           target="_blank"
-          class="project-right-link"
+          class="project-link"
           >View code <i class="bi bi-arrow-up-right"></i></a>
         </div>
-        <div class="content-center">
-          <a href="/skylounge-project.html" class="project-left-link mr-1"
+        <div class="text-center">
+          <a href="skylounge-project.html" class="project-link mr-1"
             ><i class="bi bi-arrow-left"></i> Prev project</a
           >
-          <a href="/digilab-project.html" class="project-right-link"
+          <a href="digilab-project.html" class="project-link"
             >Next project <i class="bi bi-arrow-right"></i></a>
         </div>
       <!-- </div> -->
@@ -94,7 +95,7 @@
           <a
             href="https://github.com/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           > <i class="bi bi-github"></i>
           </a>
         </li>
@@ -102,7 +103,7 @@
           <a
             href="https://www.linkedin.com/in/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           > <i class="bi bi-linkedin"></i>
           </a>
         </li>
@@ -110,7 +111,7 @@
           <a
             href="https://twitter.com/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           > <i class="bi bi-twitter"></i>
           </a>
         </li>
@@ -123,7 +124,7 @@
           </a>
         </li>
       </ul>
-      <p class="footer-content">
+      <p class="footer-text">
         &copy;
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
