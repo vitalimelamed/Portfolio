@@ -10,6 +10,7 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="googlebot" content="noindex" />
     <title>Vitali Melamed Portfolio</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -26,9 +27,9 @@
   <body>
     <header>
     <!-- navbar -->
-    <div class="navbar-toggle" aria-label="Navbar toggle">
+    <button class="navbar-toggle" type="button" aria-label="navbar toggle">
       <span class="hamburger"></span>
-    </div>
+    </button>
     <nav class="navbar">
       <a href="/" class="navbar-brand">Vitali Melamed</a>
         <ul class="navbar-list">
@@ -44,41 +45,41 @@
     <main class="main-content">
     <!-- project -->
     <section class="project-page-container">
-      <h1 class="content-center">Digilab</h1>
+      <h1 class="text-center">Digilab</h1>
       <img
         src="img/Digilab-project.png"
         alt="Digilab project mockup landing page"
         class="project-page-img"
       />
       <p>
-        Store website built with Bootstrap CSS front end framework. The project showcasing HTML,
-        CSS skills. The project consists of a landing page.
+        Portfolio side project consist of a landing page built with Bootstrap CSS front end framework showcasing HTML,
+        CSS and JavaScript skills.
       </p>
       <p>
-        The project uses a font icon library called Bootstrap Icons for items such
-        as our goals section icons and social media icons.
+        The project uses a icon library called Bootstrap Icons for items such
+        as our services section icons and social media icons.
       </p>
       <p>
-        The project incorporates jumbotron component at the top of the landing page. The project incorporates mobile responsive layout using media queries.
+        The web page incorporates jumbotron component at the top of the landing page. The User Interface incorporates mobile responsive layout using media queries.
       </p>
-      <div class="content-center">
+      <div class="text-center">
         <a
           href="https://digilab.netlify.app"
           target="_blank"
-          class="project-right-link mr-1"
+          class="project-link mr-1"
           >Live demo <i class="bi bi-arrow-up-right"></i></a>
         <a
           href="https://github.com/vitalimelamed/digilab"
           target="_blank"
-          class="project-right-link"
+          class="project-link"
           >View code <i class="bi bi-arrow-up-right"></i></a>
         </div>
-        <div class="content-center">
-          <a href="/techpost-project.html"
-          class="project-left-link mr-1"
+        <div class="text-center">
+          <a href="techpost-project.html"
+          class="project-link mr-1"
             ><i class="bi bi-arrow-left"></i> Prev project</a
           >
-          <a href="/burgerlab-project.html" class="project-right-link"
+          <a href="burgerlab-project.html" class="project-link"
             >Next project <i class="bi bi-arrow-right"></i></a>
         </div>
     </section>
@@ -91,7 +92,7 @@
           <a
             href="https://github.com/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           ><i class="bi bi-github"></i>
           </a>
         </li>
@@ -99,7 +100,7 @@
           <a
             href="https://www.linkedin.com/in/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           ><i class="bi bi-linkedin"></i>  
           </a>
         </li>
@@ -107,7 +108,7 @@
           <a
             href="https://twitter.com/vitalimelamed"
             target="_blank"
-            class="social-link mr-1"
+            class="social-link"
           ><i class="bi bi-twitter"></i> 
           </a>
         </li>
@@ -120,7 +121,7 @@
           </a>
         </li>
       </ul>
-      <p class="footer-content">
+      <p class="footer-text">
         &copy;
         <script>
           new Date().getFullYear() && document.write(+new Date().getFullYear());
