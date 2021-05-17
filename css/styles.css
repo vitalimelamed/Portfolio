@@ -5,12 +5,6 @@
   margin: 0;
   padding: 0;
 }
-@font-face {
-  font-family: 'Montserrat', sans-serif;
-  font-style: regular;
-  font-weight: 400;
-  src: local('Montserrat-Regular'), local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.ttf) format('ttf');
-}
 /* custom properties */
 :root {
   --font-family-primary: 'Montserrat', sans-serif;
@@ -419,7 +413,7 @@ li {
   position: fixed;
   top: 0.175em;
   left: 0.175em;
-  background-color: black;
+  background-color: transparent;
   color: var(--light-color);
   font-size: 1.6rem;
   cursor: pointer;
