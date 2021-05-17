@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'charmonmanbold';
-    src: url('https://www.techtek.xyz/fonts/charmonman-bold-webfont.woff2') format('woff2'),
-         url('https://www.techtek.xyz/fonts/charmonman-bold-webfont.woff') format('woff');
+    src: url('https://www.techtek.xyz/css/fonts/charmonman-bold-webfont.woff2') format('woff2'),
+         url('https://www.techtek.xyz/css/fonts/charmonman-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'montserratbold';
-    src: url('https://www.techtek.xyz/fonts/montserrat-bold-webfont.woff2') format('woff2'),
-         url('https://www.techtek.xyz/fonts/montserrat-bold-webfont.woff') format('woff');
+    src: url('https://www.techtek.xyz/css/fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('https://www.techtek.xyz/css/fonts/montserrat-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'montserratregular';
-    src: url('https://www.techtek.xyz/fonts/montserrat-regular-webfont.woff2') format('woff2'),
-         url('https://www.techtek.xyz/fonts/montserrat-regular-webfont.woff') format('woff');
+    src: url('https://www.techtek.xyz/css/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('https://www.techtek.xyz/css/fonts/montserrat-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
