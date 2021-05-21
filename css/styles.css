@@ -22,16 +22,16 @@
   --font-family-primary: 'Montserrat', sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --light-color: #f9f9f9;
-  --dark-color: #303030;
-  --accent-color: #4180fa;
+  --light-clr: #f9f9f9;
+  --dark-clr: #303030;
+  --accent-clr: #ff6525;
   --font-size-h1: 3rem;
   --font-size-h2: 2.25rem;
   --font-size-h3: 1.25rem;
   --font-size-body: 1rem;
   --box-shadow: 0 0.5em 1em -0.125em rgba(48, 48, 48, 0.5), 0 0 0 1px rgba(48, 48, 48, 0.1);
   --border-radius: 0.3em;
-  --linear-gradient: linear-gradient(45deg, #4163fa, #416dfa, #4176fa, #4180fa, #418afa, #4194fa, #419dfa, #41a7fa);
+  --linear-gradient: linear-gradient(240deg, #ff9f2f, #ff9b2d, #ff9029, #ff8225, #ff7225, #ff6525, #ff6026);
 }
 @media (min-width: 800px) {
   :root {
@@ -49,7 +49,7 @@ body {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-body);
   line-height: 1.6;
-  color: var(--dark-color);
+  color: var(--dark-clr);
 }
 section {
   padding: 5em 0.5em;
@@ -65,6 +65,7 @@ h3 {
   line-height: 1;
   margin: 0;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 h1 {
   font-size: var(--font-size-h1);
@@ -74,9 +75,9 @@ h2 {
 }
 h3 {
     font-size: var(--font-size-h3);
-    color: var(--accent-color);
 }
 strong {
+  display: block;
   font-weight: var(--font-weight-bold);
 }
 p {
@@ -84,19 +85,20 @@ p {
 }
 a {
   text-decoration: none;
+  letter-spacing: 2px;
 }
 li {
   list-style: none;
 }
 .btn {
   background-image: var(--linear-gradient);
-  color: var(--light-color);
+  color: var(--light-clr);
   padding: 0.8em 1em;
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 .mr-1 {
   margin-right: 1em;
@@ -110,10 +112,6 @@ li {
   min-height: calc(100vh - 116.8px);
 }
 .section-title {
-  background-image: var(--linear-gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-align: center;
   padding-bottom: 1em;
 }
@@ -137,22 +135,33 @@ li {
 }
 .navbar-brand {
   font-weight: var(--font-weight-bold);
-  color: var(--light-color);
+  color: var(--light-clr);
   font-size: 1.25rem;
   margin-right: 8em;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 .navbar-list {
   display: flex;
   padding-left: 0;
 }
 .navbar-link {
-  color: var(--light-color);
+  position: relative;
+  color: var(--light-clr);
   margin: 0 1em;
   font-size: 0.875rem;
-  letter-spacing: 1px;
   text-transform: uppercase;
+}
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in-out;
+  background-color: var(--light-clr);
 }
 .navbar-toggle {
   display: none;
@@ -166,9 +175,10 @@ li {
 .section-subtitle-introduction {
   display: block;
   background-image: var(--linear-gradient);
-  color: var(--light-color);
+  color: var(--light-clr);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
+  letter-spacing: 2px;
   padding: 0.25em 1em;
   margin: 0.5em 0;
   border-radius: var(--border-radius);
@@ -208,10 +218,6 @@ li {
 .skill-heading {
   padding: 1em 0;
 }
-.skill-icon {
-  width: 2.222em;
-  height: 2.222em;
-}
 .skill-text {
   padding: 1em 0.5em;
 }
@@ -232,10 +238,11 @@ li {
 .section-subtitle-about {
   display: block;
   background-image: var(--linear-gradient);
-  color: var(--light-color);
+  color: var(--light-clr);
   padding: 0.25em 1em;
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
+  letter-spacing: 2px;
   margin: 0 0 1em 0;
   border-radius: var(--border-radius);
 }
@@ -285,15 +292,22 @@ li {
   padding-bottom: 1em;
 }
 .project-link {
-  color: var(--accent-color);
-  font-size: 0.9rem;
-  text-transform: uppercase;
+  color: var(--accent-clr);
+  font-size: 1.05rem;
   font-weight: var(--font-weight-bold);
+  position: relative;
 }
-.project-icon {
-  fill: var(--accent-color);
-  width: 0.9375em;
-  height: 0.9375em;
+.project-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in-out;
+  background-color: var(--accent-clr);
 }
 /* contact */
 .form-wrapper {
@@ -311,21 +325,32 @@ li {
 .form-label {
   display: block;
 }
+input[type=text],
+input[type=email],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
 .form-input {
   width: 100%;
   font-family: inherit;
   font-size: 1.125rem;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-clr);
   border-radius: var(--border-radius);
-  background-color: transparent;
+  /* background-color: transparent; */
   padding: 0.5em;
+}
+.form-input:focus {
+  outline: 1px solid var(--accent-clr);
 }
 .form-textarea {
   resize: vertical;
 }
 .form-btn {
   background-image: var(--linear-gradient);
-  color: var(--light-color);
+  color: var(--light-clr);
   width: 100%;
   margin-bottom: 1em;
   padding: 0.8em 1em;
@@ -336,7 +361,7 @@ li {
   font-family: inherit;
   font-size: 1.125rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 /* footer */
 .footer {
@@ -347,8 +372,6 @@ li {
   justify-content: center;
 }
 .social-link {
-  width: 1.5625em;
-  height: 1.5625em;
   margin-right: 0.5em;
 }
 .footer-text {
@@ -402,27 +425,43 @@ li {
 .navbar-toggle {
   display: block;
   position: fixed;
-  top: 0.45em;
-  left: 0.45em;
-  width: 2.2em;
-  height: 2.2em;
+  top: 0.5em;
+  left: 0.5em;
   background-color: transparent;
-  fill: var(--light-color);
   cursor: pointer;
   z-index: 2;
   border: 0;
-  outline: 0;
   }
 .container {
   margin: 0 auto;
   padding: 0 0.5em;
 }
+/* projects */
 .project-page-section {
   margin: 2em auto;
   padding: 3em 0.5em 2em 0.5em;
 }
-/* projects */
 .projects {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+.project-page-title {
+  font-size: 2rem;
+}
+.project-link {
+  font-size: 0.8rem;
+  }
+}
+@media (hover: hover) {
+  .social-link:hover {
+    opacity: 0.8;
+  }
+  .navbar-link:hover::after,
+  .project-link:hover::after {
+    transform: scalex(1);
+    transform-origin: left;
+  }
+  .btn:hover,
+  .form-btn:hover {
+    opacity: 0.9;
   }
 }
