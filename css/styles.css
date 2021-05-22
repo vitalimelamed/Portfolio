@@ -100,6 +100,9 @@ li {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.btn:hover {
+    opacity: 0.9;
+  }
 .mr-1 {
   margin-right: 1em;
 }
@@ -163,6 +166,10 @@ li {
   transition: transform 250ms ease-in-out;
   background-color: var(--light-clr);
 }
+.navbar-link:hover::after {
+    transform: scalex(1);
+    transform-origin: left;
+  }
 .navbar-toggle {
   display: none;
 }
@@ -309,6 +316,10 @@ li {
   transition: transform 250ms ease-in-out;
   background-color: var(--accent-clr);
 }
+.project-link:hover::after {
+  transform: scalex(1);
+  transform-origin: left;
+}
 /* contact */
 .form-wrapper {
   display: flex;
@@ -363,6 +374,9 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.form-btn:hover {
+    opacity: 0.9;
+  }
 /* footer */
 .footer {
   padding: 1em 0;
@@ -373,6 +387,9 @@ textarea {
 }
 .social-link {
   margin-right: 0.5em;
+}
+.social-link:hover {
+  opacity: 0.8;
 }
 .footer-text {
   font-size: 0.75rem;
@@ -450,18 +467,33 @@ textarea {
 .project-link {
   font-size: 0.8rem;
   }
-}
-@media (hover: hover) {
-  .social-link:hover {
-    opacity: 0.8;
-  }
-  .navbar-link:hover::after,
-  .project-link:hover::after {
-    transform: scalex(1);
-    transform-origin: left;
-  }
-  .btn:hover,
-  .form-btn:hover {
-    opacity: 0.9;
+  @media (hover: hover) and (pointer: fine) {
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .form-btn:hover {
+      opacity: 0.9;
+    }
+    .navbar-link::after {
+      transform: scalex(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in-out;
+    }
+    .navbar-link:hover::after {
+        transform: scalex(1);
+        transform-origin: left;
+      }
+    .project-link::after {
+        transform: scalex(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in-out;
+      }
+    .project-link:hover::after {
+          transform: scalex(1);
+          transform-origin: left;
+        }
+    .social-link:hover {
+          opacity: 0.8;
+        }
   }
 }
