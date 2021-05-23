@@ -24,14 +24,14 @@
   --font-weight-bold: 700;
   --light-clr: #f9f9f9;
   --dark-clr: #303030;
-  --accent-clr: #ff6525;
+  --accent-clr: #2f77e3;
   --font-size-h1: 3rem;
   --font-size-h2: 2.25rem;
   --font-size-h3: 1.25rem;
   --font-size-body: 1rem;
   --box-shadow: 0 0.5em 1em -0.125em rgba(48, 48, 48, 0.5), 0 0 0 1px rgba(48, 48, 48, 0.1);
   --border-radius: 0.3em;
-  --linear-gradient: linear-gradient(240deg, #ff9f2f, #ff9b2d, #ff9029, #ff8225, #ff7225, #ff6525, #ff6026);
+  --linear-gradient: linear-gradient(90deg, #2f77e3, #4973e8, #616dea, #7766eb, #8d5eeb, #a253e8, #b745e2, #ca30db);
 }
 @media (min-width: 800px) {
   :root {
@@ -99,9 +99,10 @@ li {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: opacity 200ms ease-in;
 }
 .btn:hover {
-    opacity: 0.9;
+  opacity: 0.9;
   }
 .mr-1 {
   margin-right: 1em;
@@ -153,22 +154,10 @@ li {
   margin: 0 1em;
   font-size: 0.875rem;
   text-transform: uppercase;
+  transition: opacity 50ms ease-in;
 }
-.navbar-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 2px;
-  transform: scalex(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in-out;
-  background-color: var(--light-clr);
-}
-.navbar-link:hover::after {
-    transform: scalex(1);
-    transform-origin: left;
+.navbar-link:hover {
+    opacity: 0.8;
   }
 .navbar-toggle {
   display: none;
@@ -312,7 +301,7 @@ li {
   width: 100%;
   height: 2px;
   transform: scalex(0);
-  transform-origin: right;
+  transform-origin: center;
   transition: transform 250ms ease-in-out;
   background-color: var(--accent-clr);
 }
@@ -350,7 +339,6 @@ textarea {
   font-size: 1.125rem;
   border: 1px solid var(--accent-clr);
   border-radius: var(--border-radius);
-  /* background-color: transparent; */
   padding: 0.5em;
 }
 .form-input:focus {
@@ -373,9 +361,10 @@ textarea {
   font-size: 1.125rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: opacity 200ms ease-in;
 }
 .form-btn:hover {
-    opacity: 0.9;
+  opacity: 0.9;
   }
 /* footer */
 .footer {
@@ -387,6 +376,7 @@ textarea {
 }
 .social-link {
   margin-right: 0.5em;
+  transition: opacity 100ms ease-in;
 }
 .social-link:hover {
   opacity: 0.8;
@@ -467,7 +457,7 @@ textarea {
 .project-link {
   font-size: 0.8rem;
   }
-  @media (hover: hover) and (pointer: fine) {
+  @media (hover: hover) and (pointer: coarse) and (pointer: fine) {
     .btn:hover {
       opacity: 0.9;
     }
@@ -476,24 +466,24 @@ textarea {
     }
     .navbar-link::after {
       transform: scalex(0);
-      transform-origin: right;
+      transform-origin: center;
       transition: transform 250ms ease-in-out;
     }
     .navbar-link:hover::after {
-        transform: scalex(1);
-        transform-origin: left;
+      transform: scalex(1);
+      transform-origin: left;
       }
     .project-link::after {
-        transform: scalex(0);
-        transform-origin: right;
-        transition: transform 250ms ease-in-out;
+      transform: scalex(0);
+      transform-origin: center;
+      transition: transform 250ms ease-in-out;
       }
     .project-link:hover::after {
-          transform: scalex(1);
-          transform-origin: left;
+      transform: scalex(1);
+      transform-origin: left;
         }
     .social-link:hover {
-          opacity: 0.8;
+      opacity: 0.8;
         }
   }
 }
